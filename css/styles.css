@@ -12,6 +12,7 @@ body {
     background-color: black;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -153,4 +154,31 @@ header label {
 .button:hover {
     background-color: rgba(211, 211, 211, 0.668); /* Ændring ved hover */
     color: white;
+}
+
+
+h2{
+    font-family: roca;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.sektion1{
+    color:#fff;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#sektion1{
+padding-right:50px;
+padding-left: 50px;
+font-size: 20px;
+}
+.golfboldbillede{
+    height: 650px;
+    padding-right: 50px;
+    margin-right: 50px;
 }
