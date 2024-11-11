@@ -1,4 +1,4 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,14 +6,19 @@
 
 :root {
     --primary-color:#DEE2A4;
-   
-    body{
-        background-color: black;
+
+}
+body {
+    font-family: Helvetica;
+    text-decoration: none;
+    background-color: black;
+}
+
+.billder {
+        display: flex;
+        flex-direction: row;
     }
 
-/* Responsiv styling */
-/* @media (max-width: 768px) */
-
-/* .billeder {
-    font-size: 25px;
-    color: white; */
+    section h1 {
+color:var(--primary-color)  
+  }
