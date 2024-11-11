@@ -18,6 +18,9 @@
     font-style: normal;
 }
 
+
+
+
 /* webskærm */
 @media only screen and (min-width: 1100px)  {
 body {
@@ -97,5 +100,131 @@ p {
 .social-icons a:hover {
     color: var(--primary-color); /* Highlight color on hover */
 }
+}
 
+/* tablet */
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+    body {
+        font-family: 'Lao Sangam MN', sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .om-os {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 90px;
+    }
+    .billeder {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    .image {
+        width: 45%; /* Adjust image width for tablet */
+        object-fit: cover;
+    }
+    h1 {
+        color: var(--primary-color, #DEE2A4);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-family: var(--secundary-font);
+        margin-top: 40px;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        padding-top: 60px;
+        border-top: 1px solid var(--primary-color);
+    }
+    .footer p {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .social-icons a {
+        margin: 0 8px;
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .social-icons a:hover {
+        color: var(--primary-color);
+    }
+}
+
+/* Mobil */
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: 'Lao Sangam MN', sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .om-os {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .billeder {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .image {
+        width: 45%; /* LAV SLIDESHOW */
+        object-fit: cover;
+    }
+    h1 {
+        color: var(--primary-color, #DEE2A4);
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-family: var(--secundary-font);
+        margin-top: 30px;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        padding-top: 50px;
+        border-top: 1px solid var(--primary-color);
+    }
+    .footer p {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .social-icons a {
+        margin: 0 5px;
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .social-icons a:hover {
+        color: var(--primary-color);
+    }
 }
