@@ -6,6 +6,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+
 header {
     position: fixed; /* Gør navigationsbaren sticky */
     top: 0;
@@ -97,4 +98,21 @@ header .navbar ul li ul li ul li a {
     header .navbar ul {
         display: block; /* Skifter til lodret menu på mobil */
     }
+}
+
+.top {
+    background-image: url("../img/forsidetop.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 5%;
+    background-image:  linear-gradient(to bottom, transparent 60%, black 100%),
+    url('../img/forsidetop.webp');
+
 }
