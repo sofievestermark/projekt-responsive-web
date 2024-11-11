@@ -4,21 +4,57 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --primary-color:#DEE2A4;
+    --primary-font: "Lao Sangam MN";
+    --secundary-font: "Roca";
+ }
 
+ @font-face {
+    font-family: 'Lao Sangam MN';
+    src: url('fonts/Lao Sangam MN.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 body {
-    font-family: Helvetica;
-    text-decoration: none;
+    /* font-family:"Roca"; */
+    font-family: 'Lao Sangam MN', sans-serif;
     background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.billder {
-        display: flex;
-        flex-direction: row;
-    }
+.om-os {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    section h1 {
-color:var(--primary-color)  
-  }
+.billeder {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* den lille luft mellem billederne */
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 60%; /* Adjust to fit 3 images horizontally */
+    object-fit: cover;
+   
+}
+
+h1 {
+    color: var(--primary-color, #DEE2A4); 
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: var(--secundary-font);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    
+}
