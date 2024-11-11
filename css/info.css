@@ -130,11 +130,7 @@ h2{
 }
 
 .right{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width:60%;
-    height: auto; */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,12 +142,15 @@ h2{
 .img-boks{
     margin-left: 4rem;
     margin-right: -15rem;
+    
 }
 
 .realistisk-img{
     width: 80%;
-    height: ;
+    height:auto;
+   
 }
+
 
 
 .fordele-overskrift{
