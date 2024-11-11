@@ -8,7 +8,7 @@ body {
     font-family: Helvetica;
     text-decoration: none;
     min-height: 100vh;
-    background: url('../img/background.jpg');
+    background: url('../img/forsidetop1.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -113,27 +113,30 @@ header label {
 
 
 .top {
-    background-image: url("../img/forsidetop\(1\).webp");
+    background-image: url("../img/forsidetop1.jpg");
+    background-image: linear-gradient(to bottom, transparent 30%, black 100%), url("../img/forsidetop1.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 700px;
+    height: 900px;
     display: flex;
+    flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
     align-items: center;
     justify-content: center;
     position: relative;
     margin-top: 5%;
-    background-image:  linear-gradient(to bottom, transparent 60%, black 100%),
-    url('../img/forsidetop.webp');
-
 }
 
-/*styling af forside billede*/
+/* Styling af forsidebillede */
 .forsidebillede {
+    position: relative;
+    width: 200px; /* Juster størrelsen på billedet */
+    margin-bottom: 20px; /* Afstand mellem billedet og knappen */
+    z-index: 1; /* Sørger for, at billedet er foran baggrunden */
 }
 
-/*Styling af knap*/
+/* Styling af knap */
 .button {
     font-size: larger;
     border-radius: 50%;
@@ -142,8 +145,10 @@ header label {
     color: white;
     border: 2px solid white;
     transition-duration: 0.4s;
+    z-index: 1; /* Sørger for, at knappen er foran baggrunden */
 }
+
 .button:hover {
-    background-color: rgba(211, 211, 211, 0.668); /* Green */
+    background-color: rgba(211, 211, 211, 0.668); /* Ændring ved hover */
     color: white;
-  }
+}
