@@ -9,6 +9,7 @@ body {
     text-decoration: none;
     min-height: 100vh;
     background: url('../img/forsidetop1.jpg');
+    background-color: black;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -29,8 +30,8 @@ a:-webkit-any-link {
 header {
     position: fixed;
     top:0;
-    left:0;
-    right:0;
+    left:5px;
+    right:5px;
     width: 100%;
     z-index: 1000;
     background: transparent;
@@ -48,7 +49,7 @@ header .logo{
 }
 
 .logo{
-    width: 100px;
+    width: 150px;
 
 }
 
@@ -64,8 +65,9 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
-    font-size: 10px;
-    padding: 18px;
+    font-size: 15px;
+    font-family: lao sangam MN; /*font virker ikke*/
+    padding: 18px 70px;
     color: white;
     display: block;
 }
@@ -113,7 +115,6 @@ header label {
 
 
 .top {
-    background-image: url("../img/forsidetop1.jpg");
     background-image: linear-gradient(to bottom, transparent 30%, black 100%), url("../img/forsidetop1.jpeg");
     background-size: cover;
     background-position: center;
@@ -129,9 +130,9 @@ header label {
 }
 
 /* Styling af forsidebillede */
-.forsidebillede {
+.forsidelogo {
     position: relative;
-    width: 200px; /* Juster størrelsen på billedet */
+    width: 500px; /* Juster størrelsen på billedet */
     margin-bottom: 20px; /* Afstand mellem billedet og knappen */
     z-index: 1; /* Sørger for, at billedet er foran baggrunden */
 }
@@ -139,6 +140,7 @@ header label {
 /* Styling af knap */
 .button {
     font-size: larger;
+    font-family: lao sangam MN; /*font virker ikke*/
     border-radius: 50%;
     padding: 30px 70px;
     background-color: transparent;
