@@ -115,3 +115,23 @@ header label {
     cursor: pointer;
     display: none;
 }
+
+
+
+
+.top {
+    background-image: url("../img/forsidetop.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 5%;
+    background-image:  linear-gradient(to bottom, transparent 60%, black 100%),
+    url('../img/forsidetop.webp');
+
+}
