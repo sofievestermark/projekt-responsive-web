@@ -18,7 +18,7 @@
     font-style: normal;
 }
 
-
+/* webskærm */
 @media only screen and (min-width: 1100px)  {
 body {
     /* font-family:"Roca"; */
@@ -28,10 +28,13 @@ body {
     text-align: center;
     padding: 20px;
 }
-
+main {
+ padding-bottom: 170px;   
+}
 .om-os {
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 80px;
 }
 
 .billeder {
@@ -52,6 +55,7 @@ h1 {
     font-size: 2rem;
     margin-bottom: 15px;
     font-family: var(--secundary-font);
+    margin-top: 50px;
 }
 
 p {
@@ -62,17 +66,36 @@ p {
 }
 
 .footer {
-    background-color:black; /* Dark background */
-    color: white; /* White text color */
-    text-align: center; /* Center text horizontally */
-    padding: 20px; /* Add some space inside the footer */
-    position: relative; /* Optional, for layout control */
-    padding-top: 110px;
+    background-color:black; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; /* luft omkring footer */
+    position: relative; /* får den til at blive i midten */
+    padding-top: 90px;
+    border-top: 1px solid var(--primary-color);
 }
 
 .footer p {
-    margin: 5px 0; /* Space between footer text lines */
-    font-size: 0.9rem; /* Slightly smaller text */
+    margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+    font-size: 0.9rem; 
+}
+
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white; 
+    font-size: 1.5rem; 
+    text-decoration: none;
+   
+}
+
+.social-icons a:hover {
+    color: var(--primary-color); /* Highlight color on hover */
 }
 
 }
