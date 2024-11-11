@@ -1,0 +1,19 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#DEE2A4;
+   
+    body{
+        background-color: black;
+    }
+
+/* Responsiv styling */
+/* @media (max-width: 768px) */
+
+/* .billeder {
+    font-size: 25px;
+    color: white; */
