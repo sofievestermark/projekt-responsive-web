@@ -12,7 +12,7 @@ body {
     text-decoration: none;
     background-color: black;
     color: white;
-    background-image: url(/img/infotop.webp);
+    background-image: url(/img/infotop.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
@@ -122,27 +122,56 @@ h2{
     color: #DEE2A4;
 }
 
-.trackman-info{
-    margin-top: 15rem;
-    
-    
+.info-spiloplevelse{
+    margin-top: 5rem;
+    display: flex;
+
+
 }
 
 .right{
+    
     display: flex;
     flex-direction: column;
-    width: 40%;
-    justify-content: ;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+    
 }
+
+.img-boks{
+    margin-left: 4rem;
+    margin-right: -15rem;
+    
+}
+
+.realistisk-img{
+    width: 80%;
+    height:auto;
+   
+}
+
+
 
 .fordele-overskrift{
     text-align: center;
-    margin-bottom: 2rem;
+    margin-top: 10rem;
 }
 
+.info-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
-
-
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    text-align: left;
+    margin: 3rem 0 3rem 3rem;
+}
 
 
 
