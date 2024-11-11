@@ -60,4 +60,19 @@ p {
     margin-bottom: 15px;
     
 }
+
+.footer {
+    background-color:black; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add some space inside the footer */
+    position: relative; /* Optional, for layout control */
+    padding-top: 110px;
+}
+
+.footer p {
+    margin: 5px 0; /* Space between footer text lines */
+    font-size: 0.9rem; /* Slightly smaller text */
+}
+
 }
