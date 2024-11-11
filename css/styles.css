@@ -7,12 +7,9 @@
 body {
     font-family: Helvetica;
     text-decoration: none;
-    min-height: 100vh;
-    background: url('../img/forsidetop1.jpg');
     background-color: black;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -113,27 +110,25 @@ header label {
 }
 
 
-
-
 .top {
-    background-image: linear-gradient(to bottom, transparent 30%, black 100%), url("../img/forsidetop1.jpeg");
+    background-image: linear-gradient(to bottom, transparent 30%, black 100%), url("../img/forsidetop1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 900px;
+    height: 600px;
     display: flex;
     flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 5%;
 }
 
 /* Styling af forsidebillede */
 .forsidelogo {
     position: relative;
     width: 500px; /* Juster størrelsen på billedet */
+    margin-top: 300px;
     margin-bottom: 20px; /* Afstand mellem billedet og knappen */
     z-index: 1; /* Sørger for, at billedet er foran baggrunden */
 }
@@ -192,7 +187,6 @@ font-size: 20px;
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 200px;
 }
 #sektion2{
  padding-right:50px;
@@ -207,11 +201,34 @@ font-size: 20px;
     flex-direction: row;
     align-items: center;
     padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 200px;
 }
 #sektion3{
- padding-right:50px;
-padding-left: 50px;
+padding-left: 100px;
 font-size: 20px;
+}
+
+.socialemedier{
+    height: 1500px;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+
+
+
+
+
+
+.footer {
+    background-color:black; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add some space inside the footer */
+    position: relative; /* Optional, for layout control */
+}
+
+.footer p {
+    margin: 5px 0; /* Space between footer text lines */
+    font-size: 0.9rem; /* Slightly smaller text */
 }
