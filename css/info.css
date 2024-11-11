@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-
+/* Styling af body og baggrundsbillede */
 body {
     margin-top: 4rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +16,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
-    height: 400px;
+    height: 300px;
+    line-height: 1.5rem;
 }
 
 header {
@@ -96,7 +97,7 @@ header label {
     display: none;
 }
 
-
+/* Styling af hovedoverskrift og indledende tekst */
 .trackman-artikel{
     margin-top: 12rem;
     display: flex;
@@ -109,7 +110,6 @@ header label {
     width: 50%;
     height: auto;
     text-align: center;
-    line-height: 1.5rem;
 }
 
 .trackman-overskrift{
@@ -122,6 +122,10 @@ h2{
     color: #DEE2A4;
 }
 
+
+/* Styling af artikler der ligger til højre på siden */
+
+/* Styling af første artikel */
 .info-spiloplevelse{
     margin-top: 5rem;
     display: flex;
@@ -134,12 +138,12 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-right: 4rem;
     
 }
 
-.img-boks{
+
+.img-spiloplevelse{
     margin-left: 4rem;
     margin-right: -15rem;
     
@@ -151,33 +155,88 @@ h2{
    
 }
 
+/* Styling af anden artikel til højre */
+.info-data{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.img-data{
+    width: 90%;
+}
+
+
+.infodata-img{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+/* Styling af overskrifter */
+h3{
+    margin-bottom: 1rem;
+}
 
 .fordele-overskrift{
     text-align: center;
     margin-top: 10rem;
 }
 
-.info-data{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
+
+
+
+
+
+
+/* Styling af artikler der ligger til venstre */
 .left{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 40%;
-    text-align: left;
-    margin: 3rem 0 3rem 3rem;
+    justify-content: center;
+    margin:0 2rem 0 4rem;
 }
 
 
+.info-traening {
+    display: flex;
+    margin-top: 6rem;
+}
+    
+.img-traening{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+.trackman-img{
+    width: 80%;
+    height: auto;
+}
 
+/* Styling af anden artikel til venstre */
+.info-social{
+    display: flex;
+    margin-top: 5rem;
 
+}
 
+.img-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+    margin-left: -5rem;
+}
+
+.infosocial-img{
+    width: 90%;
+    opacity: 0.5;
+}
 
 @media(max-width:991px){
 
