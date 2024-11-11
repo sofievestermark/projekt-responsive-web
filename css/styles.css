@@ -1,0 +1,100 @@
+/* Generel styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed; /* Gør navigationsbaren sticky */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    backdrop-filter: blur(5px); /* Tilføjer en let blur bag teksten */
+    color: white;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar ul li {
+    position: relative;
+}
+
+header .navbar ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    background: transparent; /* Sikrer, at baggrunden er gennemsigtig */
+}
+
+header .navbar ul li:hover > a {
+    background-color: rgba(255, 255, 255, 0.2); /* Let baggrund på hover */
+}
+
+/* Undermenuer styling */
+header .navbar ul li ul {
+    display: none; /* Skjul undermenuen som udgangspunkt */
+    position: absolute;
+    top: 100%; /* Positioner undermenuen lige under hovedmenuen */
+    left: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header .navbar ul li:hover ul {
+    display: block; /* Viser undermenuen ved hover */
+}
+
+header .navbar ul li ul li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header .navbar ul li ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lysere baggrund ved hover */
+}
+
+/* Undermenu niveau 2 styling */
+header .navbar ul li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+header .navbar ul li ul li ul li a {
+    padding: 10px 20px;
+}
+
+/* Titel og logo styling */
+.titel {
+    padding: 10px 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.titel a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    display: none; /* Logo skjules som udgangspunkt */
+}
+
+/* Responsiv styling */
+@media (max-width: 768px) {
+    header .navbar ul {
+        display: block; /* Skifter til lodret menu på mobil */
+    }
+}
