@@ -3,12 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.poetsen-one-regular {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
   
 body {
     font-family: Helvetica;
@@ -18,14 +12,6 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
-}
-.titel{
-    color: #490000;
-    font-family: Poetsen One;
-    text-transform: capitalize;
-    font-size: x-large;
-    text-align: left;
-    
 }
 
 a:-webkit-any-link {
@@ -45,18 +31,25 @@ header {
     top:0;
     left:0;
     right:0;
+    width: 100%;
+    z-index: 1000;
     background: transparent;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    padding: 10px 7%;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
     text-transform: uppercase;
 }
 
+header .logo{
+    margin-left: 10px;
+    padding-left: 0;
+}
+
 .logo{
-    width: 25px;
+    width: 100px;
+
 }
 
 header .navbar ul {
@@ -120,7 +113,7 @@ header label {
 
 
 .top {
-    background-image: url("../img/forsidetop.webp");
+    background-image: url("../img/forsidetop\(1\).webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,3 +128,22 @@ header label {
     url('../img/forsidetop.webp');
 
 }
+
+/*styling af forside billede*/
+.forsidebillede {
+}
+
+/*Styling af knap*/
+.button {
+    font-size: larger;
+    border-radius: 50%;
+    padding: 30px 70px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: rgba(211, 211, 211, 0.668); /* Green */
+    color: white;
+  }
