@@ -7,10 +7,18 @@
 body {
     font-family: 'Lao Sangam MN', sans-serif;
     text-decoration: none;
-    background-color: black;
-    background-size: cover;
     background-position: center;
     text-align: center;
+    background-color: black;
+    width: 90rem;
+}
+
+main {
+    background-image: url(../img/forsidetop1.png);
+    background-position: initial;
+    background-size: 90rem;
+    width: 90rem;
+    background-repeat: no-repeat;
 }
 
 a:-webkit-any-link {
@@ -33,7 +41,6 @@ header {
     width: 100%;
     z-index: 1000;
     background: transparent;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     padding: 5px;
     display: flex;
     align-items: center;
@@ -105,7 +112,7 @@ header .navbar ul li ul li a {
 }
 
 header .navbar ul li ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Lysere hover for synlighed */
+    background: rgba(141, 137, 137, 0.2); /* Lysere hover for synlighed */
 }
 
 /* Næste niveau af undermenu */
@@ -145,12 +152,12 @@ header label {
 
 
 .top {
-    background-image: linear-gradient(to bottom, transparent 60%, black 100%), url("../img/forsidetop1.jpg");
+    background-image: linear-gradient(to bottom, transparent 60%, black 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 650px;
+    width: 90rem; /*skal muligvis ændres */
+    height: 50em;
     display: flex;
     flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
     align-items: center;
@@ -162,7 +169,7 @@ header label {
 .forsidelogo {
     position: relative;
     width: 550px; /* Juster størrelsen på billedet */
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 20px; /* Afstand mellem billedet og knappen */
     z-index: 1; /* Sørger for, at billedet er foran baggrunden */
 }
@@ -199,10 +206,12 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding-top: 250px;
     padding-left: 100px;
     padding-right: 50px;
     padding-bottom: 100px;
+    width: 90rem;
 }
 #sektion1{
 padding-right:50px;
@@ -221,6 +230,8 @@ font-size: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    width: 85rem;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -235,7 +246,9 @@ font-size: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding-left: 100px;
+    width: 90rem;
 }
 #sektion3{
 padding-left: 100px;
@@ -277,4 +290,8 @@ font-size: 20px;
 .footer p {
     margin: 5px 0; /* Space between footer text lines */
     font-size: 0.9rem; /* Slightly smaller text */
+}
+
+@media screen {
+    
 }
