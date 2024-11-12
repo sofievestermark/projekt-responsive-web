@@ -171,8 +171,8 @@ header label {
 .button {
     font-size: larger;
     font-family: 'Lao Sangam MN', sans-serif;
-    border-radius: 50%;
-    padding: 30px 70px;
+    border-radius: 10%;
+    padding: 20px 50px;
     background-color: transparent;
     color: white;
     border: 2px solid white;
@@ -181,7 +181,7 @@ header label {
 }
 
 .button:hover {
-    background-color: rgba(211, 211, 211, 0.668); /* Ændring ved hover */
+    background-color: rgba(211, 211, 211, 0.318); /* Ændring ved hover */
     color: white;
 }
 
@@ -201,18 +201,18 @@ h2{
     align-items: center;
     padding-top: 250px;
     padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 200px;
+    padding-right: 50px;
+    padding-bottom: 100px;
 }
 #sektion1{
 padding-right:50px;
 padding-left: 50px;
-font-size: 20px;
+font-size: 25px;
 }
 .golfboldbillede{
-    height: 650px;
-    padding-right: 50px;
-    margin-right: 50px;
+    height: 700px;
+    padding-left: 150px;
+    padding-bottom: 100px;
 }
 
 .sektion2{
@@ -226,7 +226,7 @@ font-size: 20px;
 }
 #sektion2{
  padding-right:50px;
-font-size: 20px;
+font-size: 25px;
 }
 
 .sektion3{
@@ -243,15 +243,26 @@ font-size: 20px;
 }
 
 .socialemedier{
-    height: 1500px;
+    height: 600px;
     margin-left: 0;
     padding-left: 0;
-
+    margin-right: 140px;
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 
 
-
+.break {
+    display: block; /* Sætter "vigtig besked" på en ny linje */
+}
+.highlight{
+    color: #DEE2A4;
+    font-weight: bold;
+}
+.lys{
+    color: white;
+}
 
 
 
