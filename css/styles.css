@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    background-image: url(../img/forsidetop1.jpg);
+    background-image: url(../img/forsidetop1.png);
     background-position: initial;
     background-size: 90rem;
     width: 90rem;
@@ -152,12 +152,12 @@ header label {
 
 
 .top {
-    background-image: linear-gradient(to bottom, transparent 50%, black 100%);
+    background-image: linear-gradient(to bottom, transparent 60%, black 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 90rem; /*skal muligvis ændres */
-    height: 1300px;
+    height: 50em;
     display: flex;
     flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
     align-items: center;
@@ -169,7 +169,7 @@ header label {
 .forsidelogo {
     position: relative;
     width: 550px; /* Juster størrelsen på billedet */
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 20px; /* Afstand mellem billedet og knappen */
     z-index: 1; /* Sørger for, at billedet er foran baggrunden */
 }
