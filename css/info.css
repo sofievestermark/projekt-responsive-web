@@ -322,33 +322,41 @@ align-items: center;
 }
 
 
-
-hr{
-    margin-bottom: 2rem;
-}
-
-footer {
-    background-color:black; /* Dark background */
-    color: white; /* White text color */
-    text-align: center; /* Center text horizontally */
-    padding: 20px; /* Add some space inside the footer */
-    position: relative; /* Optional, for layout control */
-}
-
 .footer p {
     margin: 5px 0; /* Space between footer text lines */
     font-size: 0.9rem; /* Slightly smaller text */
 }
 
+.footer {
+    background-color:black; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; /* luft omkring footer */
+    position: relative; /* får den til at blive i midten */
+    padding-top: 90px;
+    border-top: 1px solid var(--primary-color);
+}
 
+.footer p {
+    margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+    font-size: 0.9rem; 
+}
 
+.social-icons {
+    margin-top: 10px;
+}
 
+.social-icons a {
+    margin: 0 10px;
+    color: white; 
+    font-size: 1.5rem; 
+    text-decoration: none;
+   
+}
 
-
-
-
-
-
+.social-icons a:hover {
+    color: var(--primary-color); /* Highlight color on hover */
+}
 
 
 @media(max-width:991px){
