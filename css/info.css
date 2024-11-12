@@ -20,24 +20,36 @@ body {
     line-height: 1.5rem;
 }
 
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: none; /* Fjerner den underliggende streg */
+    color: inherit; /* Arver farven fra omgivende elementer */ 
+}
+
 header {
     position: fixed;
     top:0;
-    left:0;
-    right:0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    left:5px;
+    right:5px;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    padding: 10px 7%;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    text-transform: uppercase;
 }
 
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color: #333;
+header .logo{
+    margin-left: 10px;
+    padding-left: 0;
+}
+
+.logo{
+    width: 150px;
+
 }
 
 header .navbar ul {
@@ -59,15 +71,15 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-    background: #333;
-    color: 
+    background: rgba(0,0,0,0.1);
+    color: #fff;
 }
 
 header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: #fff;
     display: none;
 }
 
@@ -96,6 +108,8 @@ header label {
     cursor: pointer;
     display: none;
 }
+
+
 
 /* Styling af hovedoverskrift og indledende tekst */
 .trackman-artikel{
@@ -221,7 +235,7 @@ align-items: center;
 /* Styling af anden artikel til venstre */
 .info-social{
     display: flex;
-    margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
 
 }
 
@@ -237,6 +251,34 @@ align-items: center;
     width: 90%;
     opacity: 0.5;
 }
+
+hr{
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color:black; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add some space inside the footer */
+    position: relative; /* Optional, for layout control */
+}
+
+.footer p {
+    margin: 5px 0; /* Space between footer text lines */
+    font-size: 0.9rem; /* Slightly smaller text */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:991px){
 
