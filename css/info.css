@@ -137,6 +137,7 @@ header label {
     width: 50%;
     height: auto;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .trackman-overskrift{
@@ -151,50 +152,44 @@ h2{
 }
 
 
-/* Styling af artikler der ligger til højre på siden */
-
-/* Styling af første artikel */
 .info-spiloplevelse{
     margin-top: 5rem;
     display: flex;
-
-
+    justify-content:center;
+    align-items: center;
 }
 
-.right{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 4rem;
-    
-}
-
-
-.img-spiloplevelse{
-    margin-left: 4rem;
-    margin-right: -15rem;
+.img-spiloplevelse {
+    position: relative;
+    width: 85%;
+    height: 300px; /* Set desired height */
     background: 
         linear-gradient(to right, 
-            rgba(0, 0, 0, 0) 10%,
-            rgba(0, 0, 0, 0) 20%,
-            rgba(0, 0, 0, 0.2) 30%,    /* Light shadow at 30% */
-            rgba(0, 0, 0, 0.5) 50%,    /* Medium shadow at 50% */
-            rgba(0, 0, 0, 0.8) 70%,    /* Near full shadow at 90% */
-            rgba(0, 0, 0, 1) 100%      /* Fully dark at 100% */
+            rgba(0, 0, 0, 0.3) 0%,       /* Start with a slight shadow at 0% */
+            rgba(0, 0, 0, 0.5) 40%,      /* Darker shadow at 40% */
+            rgba(0, 0, 0, 0.7) 60%,      /* More dark at 60% */
+            rgba(0, 0, 0, 0.85) 80%,     /* Near full shadow at 80% */
+            rgba(0, 0, 0, 1) 100%        /* Fully dark at 100% */
         ), 
         url('/img/inforealistisk.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 80%;
-    height: 100%;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 2rem; /* Add padding for spacing around the text */
+    margin-left: 4rem;
 }
 
-.realistisk-img{
-    width: 60%;
-    height:100%;
+.right {
+    color: white;
+    max-width: 50%; /* Restrict width to keep text contained */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 4rem;
 }
+
 
 
 /* Styling af anden artikel til højre */
