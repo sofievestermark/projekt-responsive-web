@@ -5,7 +5,7 @@
 }
   
 body {
-    font-family: Helvetica;
+    font-family: 'Lao Sangam MN', sans-serif;
     text-decoration: none;
     background-color: black;
     background-size: cover;
@@ -64,7 +64,7 @@ header .navbar ul li {
 header .navbar ul li a {
     text-decoration: none;
     font-size: 15px;
-    font-family: lao sangam MN; /*font virker ikke*/
+    font-family: 'Lao Sangam MN', sans-serif;
     padding: 18px 70px;
     color: white;
     display: block;
@@ -111,12 +111,12 @@ header label {
 
 
 .top {
-    background-image: linear-gradient(to bottom, transparent 30%, black 100%), url("../img/forsidetop1.jpg");
+    background-image: linear-gradient(to bottom, transparent 60%, black 100%), url("../img/forsidetop1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
     align-items: center;
@@ -127,7 +127,7 @@ header label {
 /* Styling af forsidebillede */
 .forsidelogo {
     position: relative;
-    width: 500px; /* Juster størrelsen på billedet */
+    width: 550px; /* Juster størrelsen på billedet */
     margin-top: 300px;
     margin-bottom: 20px; /* Afstand mellem billedet og knappen */
     z-index: 1; /* Sørger for, at billedet er foran baggrunden */
@@ -136,7 +136,7 @@ header label {
 /* Styling af knap */
 .button {
     font-size: larger;
-    font-family: lao sangam MN; /*font virker ikke*/
+    font-family: 'Lao Sangam MN', sans-serif;
     border-radius: 50%;
     padding: 30px 70px;
     background-color: transparent;
@@ -156,6 +156,7 @@ h2{
     font-family: roca;
     padding-bottom: 10px;
     font-size: 40px;
+    color: #DEE2A4;
 }
 
 .sektion1{
@@ -164,6 +165,7 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 250px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 200px;
@@ -190,7 +192,6 @@ font-size: 20px;
 }
 #sektion2{
  padding-right:50px;
-padding-left: 50px;
 font-size: 20px;
 }
 
