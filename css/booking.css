@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color:#DEE2A4;
+    --primary-font: "Lao Sangam MN";
+    --secundary-font: "Roca";
+ }
+
+ @font-face {
+    font-family: 'Lao Sangam MN';
+    src: url('fonts/Lao Sangam MN.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* webskærm */
+@media only screen and (min-width: 1100px) {
+body {
+    /* font-family:"Roca"; */
+    font-family: 'Lao Sangam MN', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    color: var(--primary-color, #DEE2A4);
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: var(--secundary-font);
+    margin-top: 40px;
+}
+/* Styling af knap */
+.button {
+    font-size: larger;
+    font-family: lao sangam MN; 
+    border-radius: 40%;
+    padding: 20px 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+}
+button.button {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.button:hover {
+    background-color: rgba(211, 211, 211, 0.668); /* Ændring ved hover */
+    color: white;
+}
+
+.knap {
+    padding-left: 10%;
+    padding-bottom: 2.5%;
+    padding-top: 5%;
+}
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #757474; /* Arrow color */
+  }
+
+  .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid #757474; /* Arrow color */
+  }
+
+  p{
+    font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        color: var(--primary-color);
+        margin-right: 1rem;
+        margin-left: 1rem;
+  }
+
+/* billeder */
+.bookingweb {
+    width: 80%; 
+    object-fit: cover;
+    padding-bottom: 10%;
+}
+
+.bookingmobile {
+    display: none;/* fjerner billede*/
+}
+
+.footer {
+    background-color:black; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; /* luft omkring footer */
+    position: relative; /* får den til at blive i midten */
+    padding-top: 90px;
+    border-top: 1px solid var(--primary-color);
+}
+
+.footer p {
+    margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+    font-size: 0.9rem; 
+}
+
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white; 
+    font-size: 1.5rem; 
+    text-decoration: none;
+   
+}
+
+.social-icons a:hover {
+    color: var(--primary-color); /* Highlight color on hover */
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+    body {
+        /* font-family:"Roca"; */
+        font-family: 'Lao Sangam MN', sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    h1 {
+        color: var(--primary-color, #DEE2A4);
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-family: var(--secundary-font);
+        margin-top: 40px;
+    }
+
+/* Styling af knap */
+.button {
+    font-size: medium;
+    font-family: lao sangam MN; 
+    border-radius: 40%;
+    padding: 15px 35px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+}
+button.button {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.button:hover {
+    background-color: rgba(211, 211, 211, 0.668); /* Ændring ved hover */
+    color: white;
+}
+
+.knap {
+    padding-left: 10%;
+}
+
+/* billeder */
+
+    .bookingweb {
+        width: 80%; 
+        object-fit: cover;
+    }
+    
+    .bookingmobile {
+        display: none;/* fjerner billede*/
+    }
+    
+    .footer {
+        background-color:black; 
+        color: white; 
+        text-align: center; 
+        padding: 20px; /* luft omkring footer */
+        position: relative; /* får den til at blive i midten */
+        padding-top: 90px;
+        border-top: 1px solid var(--primary-color);
+    }
+    
+    .footer p {
+        margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+        font-size: 0.9rem; 
+    }
+    
+    
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        color: white; 
+        font-size: 1.5rem; 
+        text-decoration: none;
+       
+    }
+    
+    .social-icons a:hover {
+        color: var(--primary-color); /* Highlight color on hover */
+    }
+}
+/* Mobil */
+@media only screen and (max-width: 600px) {
+
+    body {
+        /* font-family:"Roca"; */
+        font-family: 'Lao Sangam MN', sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .bookingweb {
+        display: none; /* fjerner billede*/
+    }
+    
+    .bookingmobile {
+        width: 70%; 
+        object-fit: cover;
+    }
+    
+    .footer {
+        background-color:black; 
+        color: white; 
+        text-align: center; 
+        padding: 20px; /* luft omkring footer */
+        position: relative; /* får den til at blive i midten */
+        padding-top: 90px;
+        border-top: 1px solid var(--primary-color);
+    }
+    
+    .footer p {
+        margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+        font-size: 0.9rem; 
+    }
+    
+    
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        color: white; 
+        font-size: 1.5rem; 
+        text-decoration: none;
+       
+    }
+    
+    .social-icons a:hover {
+        color: var(--primary-color); /* Highlight color on hover */
+    }
+
+}
