@@ -263,17 +263,26 @@ align-items: center;
 }
 
 .img-social{
+    position: relative;
+    width: 85%;
+    height: 300px; /* Set desired height */
+    background: 
+        linear-gradient(to left, 
+            rgba(0, 0, 0, 0.1) 0%,       
+            rgba(0, 0, 0, 0.30) 40%,      
+            rgba(0, 0, 0, 0.50) 60%,      
+            rgba(0, 0, 0, 0.60) 80%,     
+            rgba(0, 0, 0, 0.8) 100%        
+        ), 
+        url('/img/infosocial.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 4rem;
-    margin-left: -5rem;
+    align-items: center; /* Center content vertically */
+    padding: 2rem; /* Add padding for spacing around the text */
 }
 
-.infosocial-img{
-    width: 90%;
-    opacity: 0.5;
-}
 
 
 hr{
