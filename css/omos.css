@@ -120,6 +120,7 @@
 main {
  padding-bottom: 170px;   
 }
+
 .om-os {
     max-width: 800px;
     margin: 0 auto;
@@ -138,6 +139,7 @@ main {
     object-fit: cover;
    
 }
+
 
 h1 {
     color: var(--primary-color, #DEE2A4); 
@@ -190,6 +192,10 @@ p {
 
 /* tablet */
 @media only screen and (min-width: 600px) and (max-width: 1100px) {
+    header {
+        display: none;
+    }
+
     body {
         font-family: 'Lao Sangam MN', sans-serif;
         background-color: black;
@@ -202,6 +208,8 @@ p {
         margin: 0 auto;
         margin-top: 60px;
         margin-bottom: 90px;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     .billeder {
         display: flex;
@@ -254,7 +262,9 @@ p {
 
 /* Mobil */
 @media only screen and (max-width: 600px) {
-    
+    header {
+        display: none;
+    }
     body {
         font-family: 'Lao Sangam MN', sans-serif;
         background-color: black;
@@ -266,8 +276,12 @@ p {
         max-width: 100%;
         margin: 0 auto;
         margin-top: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20%;
     }
-    .billeder {
+
+    /* .billeder {
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -275,8 +289,50 @@ p {
     }
     .image {
         width: 45%; /* LAV SLIDESHOW */
-        object-fit: cover;
+        /* object-fit: cover;
+    }  */ 
+
+    .billeder {
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+        margin-bottom: 15px;
+        /* position: relative;
+        display: block;  */
+      }
+    
+      .billeder .image {
+        position: center;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: auto;
+        opacity: 0;
+        animation: slideShow 9s infinite;
+      }
+    
+      .billeder .image:nth-child(1) {
+        animation-delay: 0s;
+      }
+    
+      .billeder .image:nth-child(2) {
+        animation-delay: 3s;
+      }
+    
+      .billeder .image:nth-child(3) {
+        animation-delay: 6s;
+      }
     }
+    
+    /* Animation for slideshow */
+    @keyframes slideShow {
+      0% { opacity: 0; }
+      11.11% { opacity: 1; }
+      33.33% { opacity: 1; }
+      44.44% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
     h1 {
         color: var(--primary-color, #DEE2A4);
         font-size: 1.5rem;
@@ -314,4 +370,5 @@ p {
     .social-icons a:hover {
         color: var(--primary-color);
     }
-}
+/* } */
+
