@@ -4,11 +4,24 @@
     box-sizing: border-box;
 }
 
+
+:root {
+    --primary-color:#DEE2A4;
+    --primary-font: "Lao Sangam MN";
+    --secundary-font: "Roca";
+ }
+
+ @font-face {
+    font-family: 'Lao Sangam MN';
+    src: url('fonts/Lao Sangam MN.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Styling af body og baggrundsbillede */
 body {
     margin-top: 4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+    font-family:var(--primary-font);
     text-decoration: none;
     background-color: black;
     color: white;
@@ -16,28 +29,40 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
-    height: 300px;
+    height: 250px;
     line-height: 1.5rem;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: none; /* Fjerner den underliggende streg */
+    color: inherit; /* Arver farven fra omgivende elementer */ 
 }
 
 header {
     position: fixed;
     top:0;
-    left:0;
-    right:0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    left:5px;
+    right:5px;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    padding: 10px 7%;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    text-transform: uppercase;
 }
 
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color: #333;
+header .logo{
+    margin-left: 10px;
+    padding-left: 0;
+}
+
+.logo{
+    width: 150px;
+
 }
 
 header .navbar ul {
@@ -59,15 +84,15 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-    background: #333;
-    color: 
+    background: rgba(0,0,0,0.1);
+    color: #fff;
 }
 
 header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: #fff;
     display: none;
 }
 
@@ -97,9 +122,11 @@ header label {
     display: none;
 }
 
+
+
 /* Styling af hovedoverskrift og indledende tekst */
 .trackman-artikel{
-    margin-top: 12rem;
+    margin-top: 18rem;
     display: flex;
     justify-content: center
 }
@@ -110,6 +137,7 @@ header label {
     width: 50%;
     height: auto;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .trackman-overskrift{
@@ -120,40 +148,49 @@ header label {
 
 h2{
     color: #DEE2A4;
+    font-family:var(--secundary-font);
 }
 
 
-/* Styling af artikler der ligger til højre på siden */
-
-/* Styling af første artikel */
 .info-spiloplevelse{
     margin-top: 5rem;
     display: flex;
-
-
+    justify-content:center;
+    align-items: center;
 }
 
-.right{
-    
+.img-spiloplevelse {
+    position: relative;
+    width: 85%;
+    height: 300px; /* Set desired height */
+    background: 
+        linear-gradient(to right, 
+            rgba(0, 0, 0, 0.3) 0%,       /* Start with a slight shadow at 0% */
+            rgba(0, 0, 0, 0.5) 40%,      /* Darker shadow at 40% */
+            rgba(0, 0, 0, 0.7) 60%,      /* More dark at 60% */
+            rgba(0, 0, 0, 0.85) 80%,     /* Near full shadow at 80% */
+            rgba(0, 0, 0, 1) 100%        /* Fully dark at 100% */
+        ), 
+        url('/img/inforealistisk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 2rem; /* Add padding for spacing around the text */
+    margin-left: 4rem;
+}
+
+.right {
+    color: white;
+    max-width: 50%; /* Restrict width to keep text contained */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     margin-right: 4rem;
-    
 }
 
 
-.img-spiloplevelse{
-    margin-left: 4rem;
-    margin-right: -15rem;
-    
-}
-
-.realistisk-img{
-    width: 80%;
-    height:auto;
-   
-}
 
 /* Styling af anden artikel til højre */
 .info-data{
@@ -165,12 +202,12 @@ h2{
 }
 
 .img-data{
-    width: 90%;
+    width: 100%;
 }
 
 
 .infodata-img{
-    width: 100%;
+    width: 90%;
     height: auto;
     
 }
@@ -221,7 +258,7 @@ align-items: center;
 /* Styling af anden artikel til venstre */
 .info-social{
     display: flex;
-    margin-top: 5rem;
+    margin: 5rem 0 8rem 0;
 
 }
 
@@ -237,6 +274,34 @@ align-items: center;
     width: 90%;
     opacity: 0.5;
 }
+
+hr{
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color:black; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add some space inside the footer */
+    position: relative; /* Optional, for layout control */
+}
+
+.footer p {
+    margin: 5px 0; /* Space between footer text lines */
+    font-size: 0.9rem; /* Slightly smaller text */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:991px){
 
