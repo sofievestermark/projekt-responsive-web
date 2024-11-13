@@ -644,8 +644,8 @@ text-align: center;
     main {
         background-image: url(../img/forsidetop1.png);
         background-position: initial;
-        background-size: 100% !important;
-        min-width: 100%!important;
+        background-size: 100vw !important;
+        min-width: 100vw!important;
         background-repeat: no-repeat;
 
     }
@@ -655,7 +655,7 @@ text-align: center;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-width: 100%; /*skal muligvis ændres */
+        min-width: 100vw; /*skal muligvis ændres */
         height: 70vh;
         display: flex;
         flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
