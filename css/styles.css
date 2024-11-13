@@ -4,15 +4,12 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
 :root {
     --primary-color:#DEE2A4;
     --primary-font: "Lao Sangam MN";
     --secundary-font: "Roca";
  }
   
-=======
->>>>>>> Stashed changes
 body {
     font-family: 'Lao Sangam MN', sans-serif;
     text-decoration: none;
@@ -178,7 +175,7 @@ header label {
 .forsidelogo {
     position: relative;
     width: 550px; /* Juster størrelsen på billedet */
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 20px; /* Afstand mellem billedet og knappen */
     z-index: 1; /* Sørger for, at billedet er foran baggrunden */
 }
@@ -304,7 +301,6 @@ font-size: 20px;
     font-size: 0.9rem; /* Slightly smaller text */
 }
 
-<<<<<<< Updated upstream
 .social-icons {
     margin-top: 10px;
 }
@@ -321,13 +317,329 @@ font-size: 20px;
     color: var(--primary-color); /* Highlight color on hover */
 }
 
-=======
+
+@media screen and (max-width: 1099px){
+    .navbar {
+    /*her skal navbaren laves til en burgermenu*/
+    }
+    
+    body {
+        font-family: 'Lao Sangam MN', sans-serif;
+        text-decoration: none;
+        background-position: center;
+        text-align: center;
+        background-color: black;
+        width: 90rem;
+    }
+    
+    main {
+        background-image: url(../img/forsidetop1.png);
+        background-position: initial;
+        background-size: 90rem;
+        width: 90rem;
+        background-repeat: no-repeat;
+    }
+    
+    a:-webkit-any-link {
+        color: -webkit-link;
+        text-decoration: none; /* Fjerner den underliggende streg */
+        color: inherit; /* Arver farven fra omgivende elementer */ 
+    }
+    
+    .section {
+        margin: 100px;
+        text-align: center;
+        line-height: 1.6;
+    }
+    
+    header {
+        position: fixed;
+        top:0;
+        left:5px;
+        right:5px;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    
+    header .logo{
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    
+    .logo{
+        width: 150px;
+    
+    }
+    
+    header .navbar ul {
+        list-style: none;
+    }
+    
+    header .navbar ul li {
+        position: relative;
+        float: left;
+    }
+    
+    
+    /* Styling af hovedmenu og undermenu */
+    header .navbar ul li a {
+        box-sizing: border-box;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Lao Sangam MN', sans-serif;
+        padding: 18px 70px;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+    
+    header .navbar ul li a:hover {
+        background: rgba(0,0,0,0.1);
+        color: #fff;
+    }
+    
+    /* Første niveau af undermenu */
+    header .navbar ul li ul {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 200px; /* Ensartet bredde */
+        background: transparent; /* Let baggrundsfarve for synlighed */
+        display: none;
+        padding: 0;
+    }
+    
+    header .navbar ul li ul li {
+        width: 100%; /* Ensartet bredde */
+        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
+    }
+    
+    /* Styling af undermenu links */
+    header .navbar ul li ul li a {
+        padding: 10px 0; /* Juster padding for centrering */
+        color: white; /* Sørger for, at teksten er synlig */
+        text-align: center;
+        width: 100%; /* Fyld hele bredden af menuen */
+        display: block;
+        box-sizing: border-box;
+    }
+    
+    header .navbar ul li ul li a:hover {
+        background: rgba(141, 137, 137, 0.2); /* Lysere hover for synlighed */
+    }
+    
+    /* Næste niveau af undermenu */
+    header .navbar ul li ul li ul {
+        left: 100%; /* Justering til højre for første undermenu */
+        top: 0;
+        width: 200px; /* Ensartet bredde */
+        background: transparent; /* Ensartet baggrund */
+        display: none;
+    }
+    
+    header .navbar ul li ul li ul a {
+        padding: 10px 0; /* Juster padding for centrering */
+        color: white; /* Sørger for synlig tekst */
+        text-align: center;
+        width: 100%; /* Fyld hele bredden af menuen */
+        display: block;
+        box-sizing: border-box;
+    }
+    
+    /* Hover-effekt til at vise undermenuer */
+    header .navbar ul li:hover > ul,
+    header .navbar ul li ul li:hover > ul {
+        display: block;
+    }
+    
+    #menu-bar {
+        display: none;
+    }
+    
+    header label {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        display: none;
+    }
+    
+    
+    .top {
+        background-image: linear-gradient(to bottom, transparent 60%, black 100%);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 90rem; /*skal muligvis ændres */
+        height: 60em;
+        display: flex;
+        flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    /* Styling af forsidebillede */
+    .forsidelogo {
+        position: relative;
+        width: 550px; /* Juster størrelsen på billedet */
+        margin-top: 100px;
+        margin-bottom: 40px; /* Afstand mellem billedet og knappen */
+        z-index: 1; /* Sørger for, at billedet er foran baggrunden */
+    }
+    
+    /* Styling af knap */
+    .button {
+        font-size: larger;
+        font-family: 'Lao Sangam MN', sans-serif;
+        border-radius: 10%;
+        padding: 20px 50px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        transition-duration: 0.4s;
+        z-index: 1; /* Sørger for, at knappen er foran baggrunden */
+    }
+    
+    .button:hover {
+        background-color: rgba(211, 211, 211, 0.318); /* Ændring ved hover */
+        color: white;
+    }
+    
+    
+    h2{
+        font-family: roca;
+        padding-bottom: 10px;
+        font-size: 40px;
+        color: #DEE2A4;
+    }
+    
+    .sektion1{
+        color:#fff;
+        background: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 200px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-bottom: 100px;
+        width: 90rem;
+    }
+    #sektion1{
+    padding-right:50px;
+    padding-left: 50px;
+    font-size: 25px;
+    }
+    .golfboldbillede{
+        height: 700px;
+        padding-left: 150px;
+        padding-bottom: 100px;
+    }
+    
+    .sektion2{
+        color:#fff;
+        background: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 90rem;
+        padding-left: 100px;
+        padding-right: 10rem;
+    }
+    #sektion2{
+    font-size: 25px;
+    }
+    
+    .golfboldbillede{
+        height: 700px;
+        padding-left: 50px;
+        padding-bottom: 100px;
+    }
+
+    #golfsimulator{
+        width: 45rem;
+    }
+    
+    .sektion3{
+        color:#fff;
+        background: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-left: 100px;
+        width: 90rem;
+    }
+    #sektion3{
+    padding-left: 100px;
+    font-size: 20px;
+    }
+    
+    .socialemedier{
+        height: 600px;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 140px;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    
+    
+    
+    .break {
+        display: block; /* Sætter "vigtig besked" på en ny linje */
+    }
+    .highlight{
+        color: #DEE2A4;
+        font-weight: bold;
+    }
+    .lys{
+        color: white;
+    }
+    
+    .footer {
+        background-color:black; /* Dark background */
+        color: white; /* White text color */
+        text-align: center; /* Center text horizontally */
+        padding: 20px; /* Add some space inside the footer */
+        position: relative; /* Optional, for layout control */
+        border-top: 1px solid var(--primary-color);
+    
+    }
+    
+    .footer p {
+        margin: 5px 0; /* Space between footer text lines */
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        color: white; 
+        font-size: 1.5rem; 
+        text-decoration: none;
+       
+    }
+    
+    .social-icons a:hover {
+        color: var(--primary-color); /* Highlight color on hover */
+    }
+    
 
 
 
-
-
-@media screen and (max-width: 450px){
+@media screen and (max-width: 600px){
     .navbar {
         /*her skal navbaren laves til en burgermenu*/
     }
@@ -443,4 +755,3 @@ font-size: 20px;
         margin-bottom: 200px;
     }
 }
->>>>>>> Stashed changes
