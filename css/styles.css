@@ -104,7 +104,7 @@ header .navbar ul li ul {
 }
 
 header .navbar ul li ul li {
-    max-width: 100%; /* Ensartet bredde */
+    max-width: 100vw; /* Ensartet bredde */
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
 }
 
@@ -313,25 +313,21 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 1099px){
-    .navbar {
-    /*her skal navbaren laves til en burgermenu*/
-    }
-    
+@media screen and (max-width: 1099px){    
     body {
         font-family: 'Lao Sangam MN', sans-serif;
         text-decoration: none;
         background-position: center;
         text-align: center;
         background-color: black;
-        min-width: 100%;
+        min-width: 100vw;
     }
     
     main {
         background-image: url(../img/forsidetop1.png);
         background-position: initial;
-        background-size: 100% !important;
-        min-width: 100%!important;
+        background-size: 100vw !important;
+        min-width: 100vw !important;
         background-repeat: no-repeat;
     }
     
@@ -342,7 +338,7 @@ text-align: center;
     }
     
     .section {
-        margin: 100px;
+        max-width: 80vw;
         text-align: center;
         line-height: 1.6;
     }
@@ -350,12 +346,11 @@ text-align: center;
     header {
         position: fixed;
         top:0;
-        left:1%;
-        right:1%;
-        max-width: 100%;
+        left: 1vw;
+        right:0;
+        width: 96vw;
         z-index: 1000;
         background: transparent;
-        padding: 1%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -368,8 +363,7 @@ text-align: center;
     }
     
     .logo{
-        width: 20vh;
-    
+        width: 10vw;
     }
     
     header .navbar ul {
@@ -381,14 +375,13 @@ text-align: center;
         float: left;
     }
     
-    
     /* Styling af hovedmenu og undermenu */
     header .navbar ul li a {
         box-sizing: border-box;
         text-decoration: none;
-        font-size: 2vw;
+        font-size: 1vw;
         font-family: 'Lao Sangam MN', sans-serif;
-        padding: 18px 70px;
+        padding: 2vh 4vw;
         color: white;
         display: block;
         text-align: center;
@@ -483,16 +476,15 @@ text-align: center;
     /* Styling af forsidebillede */
     .forsidelogo {
     position: relative;
-    width: 50vw; /* Juster størrelsen på billedet */
-    margin-top: 0;
+    width: 45vw; /* Juster størrelsen på billedet */
+    margin-top: 15vh;
     margin-bottom: 5%; /* Afstand mellem billedet og knappen */
     z-index: 1; /* Sørger for, at billedet er foran baggrunden */
     }
 
     .logo{
-        width: 5em;
+        width: 10vw;
     }
-    
     
     /* Styling af knap */
     .button {
@@ -520,7 +512,7 @@ text-align: center;
     h2{
         font-family: roca;
         padding-bottom: 10px;
-        font-size: 3vw;
+        font-size: 4vw;
         color: #DEE2A4;
     }
     
@@ -532,15 +524,13 @@ text-align: center;
         align-items: center;
         justify-content: center;
         padding-bottom: 100px;
-        min-width: 100%;
+        min-width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
     }
-    #sektion1{
-    font-size: 25px;
-    }
-    .golfboldbillede{
-        height: 700px;
-        padding-left: 150px;
-        padding-bottom: 100px;
+    #sektion1 p{
+    font-size: 3vh;
     }
     
     .sektion2{
@@ -551,19 +541,23 @@ text-align: center;
         align-items: center;
         justify-content: center;
         min-width: 100%;
+        padding: 0;
+   
     }
-    #sektion2{
-    font-size: 25px;
+
+    #sektion2 p{
+    font-size: 3vh;
+    margin: 3vh;
     }
     
     .golfboldbillede{
-        height: 700px;
-        padding-left: 50px;
-        padding-bottom: 100px;
+        height: 65vh;
+        padding-left: 0;
+        padding-bottom: 0;
     }
 
     #golfsimulator{
-        width: 45rem;
+        width: 50vh;
     }
     
     .sektion3{
@@ -575,24 +569,15 @@ text-align: center;
         justify-content: center;
         min-width: 100%;
     }
-    #sektion3{
-    font-size: 20px;
-    }
-
+    
     .socialemedier{
+        width:fit-content;
+        height: 65vh;
+        margin-bottom: 0;
+        margin-top: 0;
         margin-right: 0;
+        padding-right: 0;
     }
-    
-    .socialemedier{
-        height: 600px;
-        margin-left: 0;
-        padding-left: 0;
-        margin-right: 140px;
-        margin-top: 100px;
-        margin-bottom: 200px;
-    }
-    
-    
     
     .break {
         display: block; /* Sætter "vigtig besked" på en ny linje */
@@ -637,10 +622,6 @@ text-align: center;
     }
 }
 @media screen and (max-width: 600px){
-    .navbar {
-        /*her skal navbaren laves til en burgermenu*/
-    }
-
     main {
         background-image: url(../img/forsidetop1.png);
         background-position: initial;
@@ -656,7 +637,7 @@ text-align: center;
         background-position: center;
         background-repeat: no-repeat;
         min-width: 100vw; /*skal muligvis ændres */
-        height: 62vh;
+        height: 65vh;
         display: flex;
         flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
         align-items: center;
@@ -692,7 +673,7 @@ text-align: center;
     }
     .forsidelogo {
         position: relative;
-        width: 40%;
+        width: 45vw;
         z-index: 1;
         margin-top: 0;
     }
