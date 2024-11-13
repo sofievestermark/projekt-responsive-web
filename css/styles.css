@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color:#DEE2A4;
+    --primary-font: "Lao Sangam MN";
+    --secundary-font: "Roca";
+ }
   
 body {
     font-family: 'Lao Sangam MN', sans-serif;
@@ -295,76 +301,19 @@ font-size: 20px;
     font-size: 0.9rem; /* Slightly smaller text */
 }
 
-@media screen and (max-width: 1024px) {
-    header {
-/*her skal headeren gøres til en burgermenu*/
-    }
+.social-icons {
+    margin-top: 10px;
 }
 
-@media screen and (max-width: 450px) {
-    .navbar {
-        /*her skal navbaren laves til en burgermenu*/
-    }
-
-    .top {
-        background-image: linear-gradient(to bottom, transparent 60%, black 100%);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 90rem;
-        height: 50em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    .sektion1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 200px;
-        width: 90rem;
-    }
-    .golfboldbillede {
-        padding-right: 10em;
-    }
-
-    .sektion2 {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        padding-top: 100px;
-        padding-left: 13em;
-        width: 90rem;
-    }
-
-    #sektion2{
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-
-    .sektion3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 200px;
-        width: 90rem;
-    }
-
-    #sektion3{
-        font-size: 20px; 
-        padding-left: 20rem;
-        padding-right: 20rem;
-    }
-
-    .socialemedier{
-        height: 600px;
-        margin-left: 5em;
-        margin-top: 100px;
-        margin-bottom: 200px;
-    }
+.social-icons a {
+    margin: 0 10px;
+    color: white; 
+    font-size: 1.5rem; 
+    text-decoration: none;
+   
 }
+
+.social-icons a:hover {
+    color: var(--primary-color); /* Highlight color on hover */
+}
+
