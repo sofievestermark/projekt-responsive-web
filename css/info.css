@@ -644,7 +644,288 @@
 
 
 
-@media only screen and (min-width: 600px) and (max-width: 1100px){
+@media only screen and (min-width: 601px) and (max-width: 1099px){
+
+    header{
+        display: block;
+    }
+
+    footer{
+        display: block;
+    }
+   
+    a:-webkit-any-link {
+        color: -webkit-link;
+        text-decoration: none; /* Fjerner den underliggende streg */
+        color: inherit; /* Arver farven fra omgivende elementer */ 
+    }
+
+    header {
+        position: fixed;
+        top:0;
+        left:5px;
+        right:5px;
+        height: auto;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+
+    header label {
+        display: block;
+    }
+
+
+    header .logo{
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    
+    .logo{
+        width: 5.5rem;
+        
+    }
+    
+    header .navbar ul {
+        display: none;
+    }
+    
+   
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+     /* Hover-effekt til at vise undermenuer */
+     header .navbar ul li:hover > ul,
+     header .navbar ul li ul li:hover > ul {
+         display: block;
+     }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+
+     /* Styling af body og baggrundsbillede */
+     body {
+        margin-top: 4rem;
+        font-family:var(--primary-font);
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        background-image: url(/img/infotop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+        height: 120px;
+        line-height: 1.5rem;
+    }
+   
+    
+    /* Styling af hovedoverskrift og indledende tekst */
+    .trackman-artikel{
+        margin-top: 8rem;
+        display: flex;
+        justify-content: center
+    }
+
+    .trackman-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        
+    }
+
+    .trackman-overskrift{
+        text-align: center;
+        padding-bottom: 20px;
+        margin-top: 4rem;
+    }
+
+    /* Styling af overskrifter */
+    h2{
+        color: #DEE2A4;
+        font-family:var(--secundary-font);
+    }
+    
+    h3{
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .fordele-overskrift{
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    /* Styling af realistisk spiloplevelse artikel */
+    /* Første artikel til højre på siden */
+    .info-spiloplevelse{
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .img-spiloplevelse {
+        position: relative;
+        width: 100%;
+        height: 300px; 
+        background: 
+            linear-gradient(to right, 
+                rgba(0, 0, 0, 0.3) 0%,       
+                rgba(0, 0, 0, 0.5) 40%,      
+                rgba(0, 0, 0, 0.7) 60%,      
+                rgba(0, 0, 0, 0.85) 80%,    
+                rgba(0, 0, 0, 1) 100%        
+            ), 
+            url('/img/inforealistisk.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center; 
+        padding: 2rem; 
+        
+    }
+
+    .right {
+        color: white;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 2rem;
+    }
+
+    /* Artikel der ligger til venstre på siden */
+    /* Styling af konkurrencedygtig træning artikel */
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        margin:0 2rem 0 4rem;
+    }
+
+
+    .info-traening {
+        display: flex;
+        margin-top: 4rem;
+    }
+        
+    .img-traening{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        margin-right: 2rem;
+    }
+
+    .trackman-img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Styling af anden artikel til højre */
+    .info-data{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-data{
+        width: 100%;
+
+    }
+
+
+    .infodata-img{
+        width: 85%;
+        height: auto;
+        
+    }
+   
+    /* Styling af anden artikel til venstre */
+    .info-social{
+        display: flex;
+        margin: 5rem 0 4rem 0;
+
+    }
+
+    .img-social{
+        position: relative;
+        width: 100%;
+        height: 300px; 
+        background: 
+            linear-gradient(to left, 
+                rgba(0, 0, 0, 0.2),       
+                rgba(0, 0, 0, 0.40),      
+                rgba(0, 0, 0, 0.60),      
+                rgba(0, 0, 0, 0.70),     
+                rgba(0, 0, 0, 9)        
+            ), 
+            url('/img/infosocial.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center; /* Center content vertically */
+        padding: 2rem; /* Add padding for spacing around the text */
+    
+    }
+
+
+    .footer p {
+        margin: 5px 0; /* Space between footer text lines */
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .footer {
+        background-color:black; 
+        color: white; 
+        text-align: center; 
+        padding: 20px; /* luft omkring footer */
+        position: relative; /* får den til at blive i midten */
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--primary-color);
+    }
+
+    .footer p {
+        margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+        font-size: 0.9rem; 
+    }
+
+    .social-icons {
+        margin-top: 0.8rem;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        color: white; 
+        font-size: 1.5rem; 
+        text-decoration: none;
+    
+    }
+
+
+
+
+
+
+
 
     
 }
