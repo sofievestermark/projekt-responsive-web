@@ -496,10 +496,10 @@ text-align: center;
     
     /* Styling af knap */
     .button {
-        font-size: 2vw;
+        font-size: 1vw;
         font-family: 'Lao Sangam MN', sans-serif;
-        border-radius: 10%;
-        padding: 20px 50px;
+        border-radius: 5%;
+        padding: 2vh 3vw;
         background-color: transparent;
         color: white !important;
         border: 2px solid white;
@@ -656,7 +656,7 @@ text-align: center;
         background-position: center;
         background-repeat: no-repeat;
         min-width: 100vw; /*skal muligvis ændres */
-        height: 70vh;
+        height: 62vh;
         display: flex;
         flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
         align-items: center;
@@ -665,10 +665,10 @@ text-align: center;
     }
 
     .button {
-        font-size: xx-large;
+        font-size: 2vw;
         font-family: 'Lao Sangam MN', sans-serif;
-        border-radius: 10%;
-        padding: 20px 50px;
+        border-radius: 5%;
+        padding: 2vh 3vw;
         background-color: transparent;
         color: white !important;
         border: 2px solid white;
@@ -683,8 +683,8 @@ text-align: center;
     h2{
         font-family: roca;
         padding-bottom: 10px;
+        font-size: 5vw;
         color: #DEE2A4;
-        font-size: 2.5em;
     }
 
     p{
@@ -693,7 +693,6 @@ text-align: center;
     .forsidelogo {
         position: relative;
         width: 40%;
-        margin-bottom: 10rem;
         z-index: 1;
         margin-top: 0;
     }
@@ -710,10 +709,15 @@ text-align: center;
         background: black;
     }
 
+    #sektion1 p{
+        font-size: 4vw;
+        text-align: center;
+        }
+
     .golfboldbillede {
-        padding-right: 10em;
         height: 700px;
         padding-bottom: 100px;
+        padding-left: 0;
     }
 
     .sektion2 {
@@ -721,38 +725,34 @@ text-align: center;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        padding-top: 10em;
-        padding-left: 13em;
         min-width: 100%;
         color:#fff;
         background: black;
-        padding-right: 10rem;
     }
 
-    #sektion2{
-        padding-left: 5rem;
-        padding-right: 5rem;
+    #golfsimulator{
+        width: 100vw;
     }
+
+    #sektion2 p{
+        font-size: 4vw;
+        text-align: center;
+        }
 
     .sektion3{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 15em;
         min-width: 100%;
     }
 
-    #sektion3{
-        font-size: 20px; 
-        padding-left: 20rem;
-        padding-right: 20rem;
-    }
-
     .socialemedier{
-        height: 600px;
-        margin-left: 5em;
-        margin-top: 100px;
-        margin-bottom: 200px;
+        width:fit-content;
+        height: 65vh;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 0;
+        padding-right: 0;
     }
 }
