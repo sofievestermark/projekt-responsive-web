@@ -18,389 +18,631 @@
     font-style: normal;
 }
 
-/* Styling af body og baggrundsbillede */
-body {
-    margin-top: 4rem;
-    font-family:var(--primary-font);
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    background-image: url(/img/infotop.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
-    height: 250px;
-    line-height: 1.5rem;
-}
 
-a:-webkit-any-link {
-    color: -webkit-link;
-    text-decoration: none; /* Fjerner den underliggende streg */
-    color: inherit; /* Arver farven fra omgivende elementer */ 
-}
+/* Desktop styling */
 
-header {
-    position: fixed;
-    top:0;
-    left:5px;
-    right:5px;
-    width: 100%;
-    z-index: 1000;
-    background: transparent;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-transform: uppercase;
-}
-
-header .logo{
-    margin-left: 10px;
-    padding-left: 0;
-}
-
-.logo{
-    width: 150px;
-
-}
-
-header .navbar ul {
-    list-style: none;
-}
-
-header .navbar ul li {
-    position: relative;
-    float: left;
-}
-
-
-/* Styling af hovedmenu og undermenu */
-header .navbar ul li a {
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Lao Sangam MN', sans-serif;
-    padding: 18px 70px;
-    color: white;
-    display: block;
-    text-align: center;
-}
-
-header .navbar ul li a:hover {
-    background: rgba(0,0,0,0.1);
-    color: #fff;
-}
-
-/* Første niveau af undermenu */
-header .navbar ul li ul {
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    width: 200px; /* Ensartet bredde */
-    background: transparent; /* Let baggrundsfarve for synlighed */
-    display: none;
-    padding: 0;
-}
-
-header .navbar ul li ul li {
-    width: 100%; /* Ensartet bredde */
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
-}
-
-/* Styling af undermenu links */
-header .navbar ul li ul li a {
-    padding: 10px 0; /* Juster padding for centrering */
-    color: white; /* Sørger for, at teksten er synlig */
-    text-align: center;
-    width: 100%; /* Fyld hele bredden af menuen */
-    display: block;
-    box-sizing: border-box;
-}
-
-header .navbar ul li ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Lysere hover for synlighed */
-}
-
-/* Næste niveau af undermenu */
-header .navbar ul li ul li ul {
-    left: 100%; /* Justering til højre for første undermenu */
-    top: 0;
-    width: 200px; /* Ensartet bredde */
-    background: transparent; /* Ensartet baggrund */
-    display: none;
-}
-
-header .navbar ul li ul li ul a {
-    padding: 10px 0; /* Juster padding for centrering */
-    color: white; /* Sørger for synlig tekst */
-    text-align: center;
-    width: 100%; /* Fyld hele bredden af menuen */
-    display: block;
-    box-sizing: border-box;
-}
-
-/* Hover-effekt til at vise undermenuer */
-header .navbar ul li:hover > ul,
-header .navbar ul li ul li:hover > ul {
-    display: block;
-}
-
-#menu-bar {
-    display: none;
-}
-
-header label {
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
-    display: none;
-}
-
-
-
-/* Styling af hovedoverskrift og indledende tekst */
-.trackman-artikel{
-    margin-top: 18rem;
-    display: flex;
-    justify-content: center
-}
-
-.trackman-content{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: auto;
-    text-align: center;
-    margin-bottom: 7rem;
-}
-
-.trackman-overskrift{
-    text-align: center;
-    padding-bottom: 20px;
-    margin-top: 4rem;
-}
-
-
-h2{
-    color: #DEE2A4;
-    font-family:var(--secundary-font);
-}
-
-
-.info-spiloplevelse{
-    margin-top: 5rem;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.img-spiloplevelse {
-    position: relative;
-    width: 85%;
-    height: 300px; 
-    background: 
-        linear-gradient(to right, 
-            rgba(0, 0, 0, 0.3) 0%,       
-            rgba(0, 0, 0, 0.5) 40%,      
-            rgba(0, 0, 0, 0.7) 60%,      
-            rgba(0, 0, 0, 0.85) 80%,    
-            rgba(0, 0, 0, 1) 100%        
-        ), 
-        url('/img/inforealistisk.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center; 
-    padding: 2rem; 
-    margin-left: 4rem;
-}
-
-.right {
-    color: white;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-right: 4rem;
-}
-
-
-
-/* Styling af anden artikel til højre */
-.info-data{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-data{
-    width: 100%;
-
-}
-
-
-.infodata-img{
-    width: 85%;
-    height: auto;
+@media screen and (min-width: 1100px) {
     
-}
 
+    /* Styling af body og baggrundsbillede */
+    body {
+        margin-top: 4rem;
+        font-family:var(--primary-font);
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        background-image: url(/img/infotop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+        height: 250px;
+        line-height: 1.5rem;
+    }
 
-/* Styling af overskrifter */
-h3{
-    margin-bottom: 1rem;
-}
-
-.fordele-overskrift{
-    text-align: center;
-    margin-top: 10rem;
-}
-
-
-
-
-
-
-
-
-/* Styling af artikler der ligger til venstre */
-.left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:0 2rem 0 4rem;
-}
-
-
-.info-traening {
-    display: flex;
-    margin-top: 6rem;
-}
-    
-.img-traening{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.trackman-img{
-    width: 80%;
-    height: auto;
-}
-
-/* Styling af anden artikel til venstre */
-.info-social{
-    display: flex;
-    margin: 5rem 0 8rem 0;
-
-}
-
-.img-social{
-    position: relative;
-    width: 85%;
-    height: 300px; 
-    background: 
-        linear-gradient(to left, 
-            rgba(0, 0, 0, 0.2),       
-            rgba(0, 0, 0, 0.40),      
-            rgba(0, 0, 0, 0.60),      
-            rgba(0, 0, 0, 0.70),     
-            rgba(0, 0, 0, 9)        
-        ), 
-        url('/img/infosocial.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center; /* Center content vertically */
-    padding: 2rem; /* Add padding for spacing around the text */
-    margin-right: 4rem;
-}
-
-
-.footer p {
-    margin: 5px 0; /* Space between footer text lines */
-    font-size: 0.9rem; /* Slightly smaller text */
-}
-
-.footer {
-    background-color:black; 
-    color: white; 
-    text-align: center; 
-    padding: 20px; /* luft omkring footer */
-    position: relative; /* får den til at blive i midten */
-    padding-top: 90px;
-    border-top: 1px solid var(--primary-color);
-}
-
-.footer p {
-    margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
-    font-size: 0.9rem; 
-}
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    color: white; 
-    font-size: 1.5rem; 
-    text-decoration: none;
-   
-}
-
-.social-icons a:hover {
-    color: var(--primary-color); /* Highlight color on hover */
-}
-
-
-@media(max-width:991px){
-
+    a:-webkit-any-link {
+        color: -webkit-link;
+        text-decoration: none; /* Fjerner den underliggende streg */
+        color: inherit; /* Arver farven fra omgivende elementer */ 
+    }
 
     header {
-        padding: 20px;
+        position: fixed;
+        top:0;
+        left:5px;
+        right:5px;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
     }
+
+    header .logo{
+        margin-left: 10px;
+        padding-left: 0;
+    }
+
+    .logo{
+        width: 150px;
+
+    }
+
+    header .navbar ul {
+        list-style: none;
+    }
+
+    header .navbar ul li {
+        position: relative;
+        float: left;
+    }
+
+
+    /* Styling af hovedmenu og undermenu */
+    header .navbar ul li a {
+        box-sizing: border-box;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Lao Sangam MN', sans-serif;
+        padding: 18px 70px;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+
+    header .navbar ul li a:hover {
+        background: rgba(0,0,0,0.1);
+        color: #fff;
+    }
+
+    /* Første niveau af undermenu */
+    header .navbar ul li ul {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 200px; /* Ensartet bredde */
+        background: transparent; /* Let baggrundsfarve for synlighed */
+        display: none;
+        padding: 0;
+    }
+
+    header .navbar ul li ul li {
+        width: 100%; /* Ensartet bredde */
+        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
+    }
+
+    /* Styling af undermenu links */
+    header .navbar ul li ul li a {
+        padding: 10px 0; /* Juster padding for centrering */
+        color: white; /* Sørger for, at teksten er synlig */
+        text-align: center;
+        width: 100%; /* Fyld hele bredden af menuen */
+        display: block;
+        box-sizing: border-box;
+    }
+
+    header .navbar ul li ul li a:hover {
+        background: rgba(255, 255, 255, 0.2); /* Lysere hover for synlighed */
+    }
+
+    /* Næste niveau af undermenu */
+    header .navbar ul li ul li ul {
+        left: 100%; /* Justering til højre for første undermenu */
+        top: 0;
+        width: 200px; /* Ensartet bredde */
+        background: transparent; /* Ensartet baggrund */
+        display: none;
+    }
+
+    header .navbar ul li ul li ul a {
+        padding: 10px 0; /* Juster padding for centrering */
+        color: white; /* Sørger for synlig tekst */
+        text-align: center;
+        width: 100%; /* Fyld hele bredden af menuen */
+        display: block;
+        box-sizing: border-box;
+    }
+
+    /* Hover-effekt til at vise undermenuer */
+    header .navbar ul li:hover > ul,
+    header .navbar ul li ul li:hover > ul {
+        display: block;
+    }
+
+    #menu-bar {
+        display: none;
+    }
+
+    header label {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        display: none;
+    }
+
+
+
+    /* Styling af hovedoverskrift og indledende tekst */
+    .trackman-artikel{
+        margin-top: 18rem;
+        display: flex;
+        justify-content: center
+    }
+
+    .trackman-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+
+    .trackman-overskrift{
+        text-align: center;
+        padding-bottom: 20px;
+        margin-top: 4rem;
+    }
+
+
+    h2{
+        color: #DEE2A4;
+        font-family:var(--secundary-font);
+    }
+
+
+    /* Styling af realistisk spiloplevelse artikel */
+    /* Første artikel til højre på siden */
+    .info-spiloplevelse{
+        margin-top: 5rem;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .img-spiloplevelse {
+        position: relative;
+        width: 85%;
+        height: 300px; 
+        background: 
+            linear-gradient(to right, 
+                rgba(0, 0, 0, 0.3) 0%,       
+                rgba(0, 0, 0, 0.5) 40%,      
+                rgba(0, 0, 0, 0.7) 60%,      
+                rgba(0, 0, 0, 0.85) 80%,    
+                rgba(0, 0, 0, 1) 100%        
+            ), 
+            url('/img/inforealistisk.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center; 
+        padding: 2rem; 
+        margin-left: 4rem;
+    }
+
+    .right {
+        color: white;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 4rem;
+    }
+
+    /* Artikel der ligger til venstre på siden */
+    /* Styling af konkurrencedygtig træning artikel */
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 2rem 0 4rem;
+    }
+
+
+    .info-traening {
+        display: flex;
+        margin-top: 6rem;
+    }
+        
+    .img-traening{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .trackman-img{
+        width: 80%;
+        height: auto;
+    }
+
+    /* Styling af anden artikel til højre */
+    .info-data{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-data{
+        width: 100%;
+
+    }
+
+
+    .infodata-img{
+        width: 85%;
+        height: auto;
+        
+    }
+
+
+    /* Styling af overskrifter */
+    h3{
+        margin-bottom: 1rem;
+    }
+
+    .fordele-overskrift{
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+   
+    /* Styling af anden artikel til venstre */
+    .info-social{
+        display: flex;
+        margin: 5rem 0 8rem 0;
+
+    }
+
+    .img-social{
+        position: relative;
+        width: 85%;
+        height: 300px; 
+        background: 
+            linear-gradient(to left, 
+                rgba(0, 0, 0, 0.2),       
+                rgba(0, 0, 0, 0.40),      
+                rgba(0, 0, 0, 0.60),      
+                rgba(0, 0, 0, 0.70),     
+                rgba(0, 0, 0, 9)        
+            ), 
+            url('/img/infosocial.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center; /* Center content vertically */
+        padding: 2rem; /* Add padding for spacing around the text */
+        margin-right: 4rem;
+    }
+
+
+    .footer p {
+        margin: 5px 0; /* Space between footer text lines */
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .footer {
+        background-color:black; 
+        color: white; 
+        text-align: center; 
+        padding: 20px; /* luft omkring footer */
+        position: relative; /* får den til at blive i midten */
+        padding-top: 90px;
+        border-top: 1px solid var(--primary-color);
+    }
+
+    .footer p {
+        margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+        font-size: 0.9rem; 
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        color: white; 
+        font-size: 1.5rem; 
+        text-decoration: none;
     
+    }
+
+    .social-icons a:hover {
+        color: var(--primary-color); /* Highlight color on hover */
+    }
+}
+
+/* Styling af siden til Mobil */
+@media screen and (max-width:600px) {
+    
+    header{
+        display: block;
+    }
+
+    footer{
+        display: block;
+    }
+   
+    a:-webkit-any-link {
+        color: -webkit-link;
+        text-decoration: none; /* Fjerner den underliggende streg */
+        color: inherit; /* Arver farven fra omgivende elementer */ 
+    }
+
+    header {
+        position: fixed;
+        top:0;
+        left:5px;
+        right:5px;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+
     header label {
         display: block;
     }
 
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left:0;
-        right:0;
-        background: #fff;
-        border-top: 1px solid rgba(0,0,0,0.1);
+
+    header .logo{
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    
+    .logo{
+        width: 5.5rem;
+        
+    }
+    
+    header .navbar ul {
         display: none;
     }
-
-    header .navbar ul li {
-        width: 100%;
-    }
-
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
-
-    header .navbar ul li ul li {
-        background: #eee;
-    }
+    
+   
 
     header .navbar ul li ul li ul {
         width: 100%;
         left:0;
     }
 
+     /* Hover-effekt til at vise undermenuer */
+     header .navbar ul li:hover > ul,
+     header .navbar ul li ul li:hover > ul {
+         display: block;
+     }
+
     #menu-bar:checked ~ .navbar {
         display: block;
     }
 
-}
 
+     /* Styling af body og baggrundsbillede */
+     body {
+        margin-top: 4rem;
+        font-family:var(--primary-font);
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        background-image: url(/img/infotop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+        height: 120px;
+        line-height: 1.5rem;
+    }
+   
+    /* Styling af hovedoverskrift og indledende tekst */
+    .trackman-artikel{
+        margin-top: 8rem;
+        display: flex;
+        justify-content: center
+    }
+
+    .trackman-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .trackman-overskrift{
+        text-align: center;
+        padding-bottom: 20px;
+        margin-top: 4rem;
+    }
+
+    /* Styling af overskrifter */
+    h2{
+        color: #DEE2A4;
+        font-family:var(--secundary-font);
+    }
+    
+    h3{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .fordele-overskrift{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    /* Styling af realistisk spiloplevelse artikel */
+    /* Første artikel til venstre på siden */
+    .info-spiloplevelse{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .img-spiloplevelse {
+        position: relative;
+        width: 100%;
+        height: 400px; 
+        background: 
+            radial-gradient(circle, 
+                rgba(0, 0, 0, 0.3) 0%,       
+                rgba(0, 0, 0, 0.5) 40%,      
+                rgba(0, 0, 0, 0.7) 60%,      
+                rgba(0, 0, 0, 0.85) 80%,    
+                rgba(0, 0, 0, 1) 100%        
+            ), 
+            url('/img/inforealistisk.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .right {
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    /* Artikel der ligger til venstre på siden */
+    /* Styling af konkurrencedygtig træning artikel */
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 70%;
+    }
+
+
+    .info-traening {
+        display: flex;
+        margin-top: 2.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    .img-traening{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .trackman-img{
+        width: 60%;
+        height: auto;
+    }
+
+    /* Styling af anden artikel til højre */
+    .info-data{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-data{
+        width: 100%;
+        display: flex;
+        margin-bottom: 2.5rem;
+
+    }
+
+
+    .infodata-img{
+        width: 60%;
+        height: auto;
+        
+    }
+
+    /* Styling af anden artikel til venstre */
+    .info-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-social{
+        position: relative;
+        width: 100%;
+        height: 300px; 
+        background: 
+            radial-gradient(circle, 
+                rgba(0, 0, 0, 0.3) 0%,       
+                rgba(0, 0, 0, 0.5) 40%,      
+                rgba(0, 0, 0, 0.7) 60%,      
+                rgba(0, 0, 0, 0.85) 80%,    
+                rgba(0, 0, 0, 1) 100%        
+            ), 
+            url('/img/infosocial.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center; 
+        padding: 2rem; 
+        margin-top: 1.5rem;
+    }
+
+
+    .footer p {
+        margin: 5px 0; /* Space between footer text lines */
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .footer {
+        background-color:black; 
+        color: white; 
+        text-align: center; 
+        padding: 20px; /* luft omkring footer */
+        position: relative; /* får den til at blive i midten */
+        padding-top: 90px;
+        border-top: 1px solid var(--primary-color);
+    }
+
+    .footer p {
+        margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+        font-size: 0.9rem; 
+    }
+
+    .social-icons {
+        margin-top: 0.8rem;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        color: white; 
+        font-size: 1.5rem; 
+        text-decoration: none;
+    
+    }
+
+    .social-icons a:hover {
+        color: var(--primary-color); 
+    }
+
+
+
+}
