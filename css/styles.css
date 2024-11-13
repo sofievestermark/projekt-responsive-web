@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
 :root {
     --primary-color:#DEE2A4;
     --primary-font: "Lao Sangam MN";
     --secundary-font: "Roca";
  }
   
+=======
+>>>>>>> Stashed changes
 body {
     font-family: 'Lao Sangam MN', sans-serif;
     text-decoration: none;
@@ -237,7 +240,7 @@ font-size: 25px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 85rem;
+    width: 90rem;
     padding-left: 100px;
     padding-right: 10rem;
 }
@@ -286,8 +289,6 @@ font-size: 20px;
     color: white;
 }
 
-
-
 .footer {
     background-color:black; /* Dark background */
     color: white; /* White text color */
@@ -303,6 +304,7 @@ font-size: 20px;
     font-size: 0.9rem; /* Slightly smaller text */
 }
 
+<<<<<<< Updated upstream
 .social-icons {
     margin-top: 10px;
 }
@@ -319,3 +321,126 @@ font-size: 20px;
     color: var(--primary-color); /* Highlight color on hover */
 }
 
+=======
+
+
+
+
+
+@media screen and (max-width: 450px){
+    .navbar {
+        /*her skal navbaren laves til en burgermenu*/
+    }
+
+    main {
+        background-image: url(../img/forsidetop1.png);
+        background-position: initial;
+        background-size: 90rem;
+        width: 90rem;
+        background-repeat: no-repeat;
+
+    }
+
+    .top {
+        background-image: linear-gradient(to bottom, transparent 60%, black 100%);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 90rem; /*skal muligvis ændres */
+        height: 75em;
+        display: flex;
+        flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .button {
+        font-size: xx-large;
+        font-family: 'Lao Sangam MN', sans-serif;
+        border-radius: 10%;
+        padding: 20px 50px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        transition-duration: 0.4s;
+        z-index: 1; /* Sørger for, at knappen er foran baggrunden */
+    }
+
+    h2{
+        font-family: roca;
+        padding-bottom: 10px;
+        color: #DEE2A4;
+        font-size: 2.5em;
+    }
+
+    p{
+        font-size: 2.5rem;
+    }
+    .forsidelogo {
+        position: relative;
+        width: 550px;
+        margin-bottom: 10rem;
+        z-index: 1;
+        margin-top: 0;
+    }
+
+    .sektion1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 0;
+        width: 90rem;
+        color:#fff;
+        background: black;
+    }
+
+    .golfboldbillede {
+        padding-right: 10em;
+        height: 700px;
+        padding-bottom: 100px;
+    }
+
+    .sektion2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10em;
+        padding-left: 13em;
+        width: 90rem;
+        color:#fff;
+        background: black;
+        padding-right: 10rem;
+    }
+
+    #sektion2{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .sektion3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15em;
+        width: 90rem;
+    }
+
+    #sektion3{
+        font-size: 20px; 
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+
+    .socialemedier{
+        height: 600px;
+        margin-left: 5em;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+}
+>>>>>>> Stashed changes
