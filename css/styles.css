@@ -294,6 +294,8 @@ font-size: 20px;
     text-align: center; /* Center text horizontally */
     padding: 20px; /* Add some space inside the footer */
     position: relative; /* Optional, for layout control */
+    border-top: 1px solid var(--primary-color);
+
 }
 
 .footer p {
