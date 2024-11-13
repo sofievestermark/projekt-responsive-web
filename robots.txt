@@ -1,0 +1,3 @@
+user-agent:*
+disallow:
+sitemap: (link her til sitemap, på samme måde som du linker en css fil i html)
