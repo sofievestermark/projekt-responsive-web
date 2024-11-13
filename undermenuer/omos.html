@@ -17,74 +17,67 @@
 <body>
 
     <header>
-        <a href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a></img>
-        </section>
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar">Menu</label>
-    
-        <nav class="navbar">
-
-            <nav id="navigation-icon"><a href="#navigation-mobile">
-                <div class="burger"></div>
-                <div class="burger"></div>
-                <div class="burger"></div>
-            </a></nav>
-
-            <ul>
-                <!-- Parent: Priser -->
-                <li><a href="#"> Priser +</a>
-                    <!-- Child: tilbud, gavekort og samarbejdsklubber -->
-                    <ul>
-                        <li><a href="#">Tilbud og Gavekort</a>
-                        </li>
-                        <li><a href="#">Samarbejds-klubber</a>
-                        </li>
-                    </ul>
-                </li>
-    
-                <!-- Parent: booking -->
-                <li><a href="../undermenuer/booking.html">Booking +</a>
-                    <ul>
-                        <li><a href="#">Arrangementer</a>
-                        </li>
-                        <li><a href="#">Retningslinjer</a>
-                        </li>
-                    </ul>
-                </li>
-    
-                <!-- Parent: faciliteter -->
-                <li><a href="#">Faciliteter +</a>
-                    <ul>
-                        <li><a href="#">Parkering</a>
-                        </li>
-                        <li><a href="../undermenuer/info-om-udstyr.html">Info om udstyr</a>
-                            <ul>
-                                <li><a href="#">Træningsmoduler/Courses</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Låneudstyr</a>
-                        </li>
-                        <li><a href="#">Mad og drikke</a>
-                        </li>
-                    </ul>
-                </li>
-    
-                <!-- Parent: om os -->
-                <li><a href="../undermenuer/omos.html">Om Os +</a>
-                    <ul>
-                        <li><a href="#">Kontakt</a>
-                        </li>
-                        <li><a href="#">Sociale medier</a>
-                        </li>
-                        <li><a href="#">Åbningstider</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+            <a href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a></img>
+            </section>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">Menu</label>
+        
+            <nav class="navbar">
+                <ul>
+                    <!-- Parent: Priser+ -->
+                    <li><a href="#"> Priser +</a>
+                        <!-- Child: Tilbud og Gavekort, Samarbejdsklubber -->
+                        <ul>
+                            <li><a href="#">Tilbud og Gavekort</a>
+                            </li>
+                            <li><a href="#">Samarbejdsklubber</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <!-- Parent: Booking -->
+                    <li><a href="../undermenuer/booking.html">Booking +</a>
+                        <ul>
+                            <li><a href="#">Arrangementer</a>
+                            </li>
+                            <li><a href="#">Retningslinjer</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <!-- Parent: Faciliteter -->
+                    <li><a href="#">Faciliteter +</a>
+                        <ul>
+                            <li><a href="#">Parkering</a>
+                            </li>
+                            <li><a href="../undermenuer/info-om-udstyr.html">Info om udstyr</a>
+                                <ul>
+                                    <li><a href="#">Træningsmoduler</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Låneudstyr</a>
+                            </li>
+                            <li><a href="#">Mad og drikke</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <!-- Parent: Om os -->
+                    <li><a href="../undermenuer/omos.html">Om Os +</a>
+                        <ul>
+                            <li><a href="#">Kontakt</a>
+                            </li>
+                            <li><a href="#">Sociale medier</a>
+                            </li>
+                            <li><a href="#">Åbningstider</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
     </header>
 
-   <!--billerder-->
+   <!--billerder tablet og web -->
     <main class="om-os">
         <section class="billeder">
             <img src="../img/omos1.png" alt="golfspillere der griner" class="image">
@@ -92,17 +85,19 @@
             <img src="../img/omos3.png" alt="golfspillere der taler sammen" class="image">
         </section>
 
+    <!--mobil slideshow - lavet ved hjælp af: https://www.youtube.com/watch?v=McPdzhLRzCg -->
         <main class="container">
             <section class="slider-wrapper">
                 <section class="slider">
-                    <img id="slide-1" src="../img/omos1.png" alt="golfspillere">
-                    <img id="slide-2" src="../img/omos2.png" alt="golfspillere">
-                    <img id="slide-3" src="../img/omos3.png" alt="golfspillere">
+                    <img id="slide-1" src="../img/omos1.png" alt="golfspillere der griner">
+                    <img id="slide-2" src="../img/omos2.png" alt="golfspillere der giver hånd">
+                    <img id="slide-3" src="../img/omos3.png" alt="golfspillere der taler sammen">
                 </section>
+                <!-- prikkerne der 'linker' til de tre billeder -->
                 <section class="slider-nav">
-                    <a href="#slider-1"></a>
-                    <a href="#slider-2"></a>
-                    <a href="#slider-3"></a>
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
                 </section>
             </section>  
         </main>
