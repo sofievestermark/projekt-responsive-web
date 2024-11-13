@@ -145,6 +145,7 @@
     color: white;
     text-align: center;
     padding: 20px;
+    line-height: 1.5rem;
 }
 
 main {
@@ -156,6 +157,13 @@ h1 {
     margin-bottom: 10px;
     font-family: var(--secundary-font);
     margin-top: 40px;
+}
+
+h2{
+    color: var(--primary-color);
+    font-family: var(--secundary-font);
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .kalender {
@@ -204,7 +212,7 @@ button.button {
     border-right: 15px solid #757474; /* Arrow color */
   }
 
-  p{
+  .knap-tekst{
     font-size: 1rem;
         line-height: 1.5;
         margin-bottom: 10px;
@@ -223,6 +231,45 @@ button.button {
 .bookingmobile {
     display: none;/* fjerner billede*/
 }
+
+.booking-content{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.nybegynder-artikel{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: left;
+}
+
+.linebreak{
+    display: block;
+    margin-top: 2rem;
+}
+
+.infographic-afsnit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    margin-top: 3rem;
+}
+
+.graphic-overskrift{
+    font-size: 1.2rem;
+}
+
+.infographic-img{
+    width: 50%;
+    
+}
+
+
+
+
 
 .footer {
     background-color:black; 
