@@ -15,184 +15,187 @@
    <link rel="stylesheet" href="../css/booking.css">
 </head>
 
-<header>
-    <a href="../index.html"><img src="../img/logo.webp" alt="Golf Simulator Aarhus logo" class="logo"></a></img>
-</section>
-<input type="checkbox" id="menu-bar">
-<label for="menu-bar"></label>
-
-<nav class="navbar">
-    <ul>
-        <!-- Parent: Priser+ -->
-        <li><a href="#"> Priser</a>
-            <!-- Child: Tilbud og Gavekort, Samarbejdsklubber -->
-            <ul>
-                <li><a href="#">Tilbud og Gavekort</a>
-                </li>
-                <li><a href="#">Samarbejdsklubber</a>
-                </li>
-            </ul>
-        </li>
-
-        <!-- Parent: Booking -->
-        <li><a href="../undermenuer/booking.html">Booking +</a>
-            <ul>
-                <li><a href="#">Arrangementer</a>
-                </li>
-                <li><a href="#">Retningslinjer</a>
-                </li>
-            </ul>
-        </li>
-
-        <!-- Parent: Faciliteter -->
-        <li><a href="#">Faciliteter</a>
-            <ul>
-                <li><a href="#">Parkering</a>
-                </li>
-                <li><a href="../undermenuer/info-om-udstyr.html">Info om udstyr +</a>
-                    <ul>
-                        <li><a href="#">Træningsmoduler</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Låneudstyr</a>
-                </li>
-                <li><a href="#">Mad og drikke</a>
-                </li>
-            </ul>
-        </li>
-
-        <!-- Parent: Om os -->
-        <li><a href="../undermenuer/omos.html">Om Os +</a>
-            <ul>
-                <li><a href="#">Kontakt</a>
-                </li>
-                <li><a href="#">Sociale medier</a>
-                </li>
-                <li><a href="#">Åbningstider</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-
-<!-- burgermenu lavet vha. https://www.youtube.com/watch?v=8eFeIFKAKHw&list=WL&index=62 -->
-
-<nav class="burgermenu">
-    <input type="checkbox" id="sidebar-active">
-    <label for="sidebar-active" class="open-sidebar-button"> <!-- de tre streger -->
-        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" class="streger"/></svg>
-    </label>
-
-    <label id="overlay" for="sidebar-active"></label> <!-- den der gør at vi kommer ud af sidebaren når vi trykker et andet sted på skærmen -->
-
-    <div class="links-container">
-        <label for="sidebar-active" class="close-sidebar-button"> <!-- krydset -->
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" class="kryds"/></svg>        
-        </label>
-        <a href="#">priser</a>
-        <a href="../undermenuer/booking.html">booking+</a>
-        <a href="../undermenuer/info-om-udstyr.html">Info om udstyr+</a>
-        <a href="../undermenuer/omos.html">om os+</a>
-    </div>
-</nav>            
-</header>
 <body>
-<main>
-    <!-- Overskrift og billede af kalender -->
-    <>
-        <h1>Booking</h1>
-     <section class="knap">
-        <button type="button" class="button"><div class="arrow-left"></div> <p class="knap-tekst">Uge 47</p>  <div class="arrow-right"></div></button>
-    </section>
+    <header>
+        <a href="../index.html"><img src="../img/logo.webp" alt="Golf Simulator Aarhus logo" class="logo"></a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"></label>
 
-    <!-- Kalender ikon -->
-    <section>
-        <img src="../img/kalender.webp" alt="kalender icon" class="kalender">
-    </section>
+    <nav class="navbar">
+        <ul>
+            <!-- Parent: Priser+ -->
+            <li><a href="#"> Priser</a>
+                <!-- Child: Tilbud og Gavekort, Samarbejdsklubber -->
+                <ul>
+                    <li><a href="#">Tilbud og Gavekort</a>
+                    </li>
+                    <li><a href="#">Samarbejdsklubber</a>
+                    </li>
+                </ul>
+            </li>
 
-    <!-- Kalender billede til desktop -->
-    <section>
-        <img src="../img/bookingweb.webp" alt="bookingside" class="bookingweb">
-    </section>
+            <!-- Parent: Booking -->
+            <li><a href="../undermenuer/booking.html">Booking +</a>
+                <ul>
+                    <li><a href="#">Arrangementer</a>
+                    </li>
+                    <li><a href="#">Retningslinjer</a>
+                    </li>
+                </ul>
+            </li>
 
-    <!-- Kalender billede til mobil -->
-    <section>
-        <img src="../img/bookingmobile.webp" alt="bookingside" class="bookingmobile">
-    </section>
+            <!-- Parent: Faciliteter -->
+            <li><a href="#">Faciliteter</a>
+                <ul>
+                    <li><a href="#">Parkering</a>
+                    </li>
+                    <li><a href="../undermenuer/info-om-udstyr.html">Info om udstyr +</a>
+                        <ul>
+                            <li><a href="#">Træningsmoduler</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Låneudstyr</a>
+                    </li>
+                    <li><a href="#">Mad og drikke</a>
+                    </li>
+                </ul>
+            </li>
 
-    <!-- Courses artikler sektion begynder -->
-     <!-- Overskrift til sektionen -->
-    <section>
-        <aside class="courses-over">
-            <h2>Courses</h2>
-            </aside>
-    </section>
+            <!-- Parent: Om os -->
+            <li><a href="../undermenuer/omos.html">Om Os +</a>
+                <ul>
+                    <li><a href="#">Kontakt</a>
+                    </li>
+                    <li><a href="#">Sociale medier</a>
+                    </li>
+                    <li><a href="#">Åbningstider</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-    <!-- Artiklerne begynder -->
-    <section class="courses-afsnit">
-       
-        <article class="drv-mode">
-            <h3>Driving Range Mode</h3>
-            <p>Denne mode simulerer en virtuel driving range, hvor golfspillere kan øve deres slag, teste forskellige køller og analysere slagdata. Driving range mode giver ofte detaljeret feedback på målinger som boldhastighed, launch-vinkel, flyvedistance, spin-rate og svingbane. Det er ideelt for golfspillere, der ønsker at forbedre specifikke aspekter af deres spil uden at spille en fuld bane.</p>
+    <!-- burgermenu lavet vha. https://www.youtube.com/watch?v=8eFeIFKAKHw&list=WL&index=62 -->
 
-            
-        </article>
-        
-        <article class="full-mode">
-            <h3>Full Course Play</h3>
-            <p>Mange golfsimulatorer tilbyder virtuelle gengivelser af kendte golfbaner fra hele verden, så spillerne kan opleve en runde golf i realistiske omgivelser. I denne mode kan golfspillere spille en fuld 18-hullers runde alene eller med venner, med funktioner som vejrtuning, realistisk terræn og forhindringer som bunkers og vandhazarder. Det er perfekt til golfspillere, der ønsker fornemmelsen af at være på en rigtig bane uden at skulle rejse.</p>
+    <nav class="burgermenu">
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button"> <!-- de tre streger -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" class="streger"/></svg>
+        </label>
 
-          
-        </article>
+        <label id="overlay" for="sidebar-active"></label> <!-- den der gør at vi kommer ud af sidebaren når vi trykker et andet sted på skærmen -->
 
-        <article class="skill-mode">
-            <h3>Skills Challenge Mode</h3>
-            <p>Denne mode indeholder forskellige spil og udfordringer baseret på færdigheder, såsom nærmest-pinden konkurrencer, præcisionsudfordringer og puttetræning. Disse øvelser er designet til at gøre træningen sjov og konkurrencepræget, hvilket tilføjer en social dimension, der er fantastisk til grupper. Skills challenge mode kan hjælpe golfspillere med at finpudse specifikke dele af deres spil, som kortdistancepræcision eller putting-konsistens, samtidig med at de får lidt venskabelig konkurrence.</p>
-
-            
-        </article>
-    </section>
-
-    <!-- Infographic afsnit begynder -->
-   <section class="infographic">
-    <aside class="infographic-afsnit">
-        <h2 class="graphic-overskrift">Er du i tvivl om hvordan man spiller?</h2>
-        <img class="infographic-img" src="/img/infographic-booking.webp" alt="Infografik med en mand der spiller golf i midten">
-    </aside> 
-   </section>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button"> <!-- krydset -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" class="kryds"/></svg>        
+            </label>
+            <a href="#">priser</a>
+            <a href="../undermenuer/booking.html">booking+</a>
+            <a href="../undermenuer/info-om-udstyr.html">Info om udstyr+</a>
+            <a href="../undermenuer/omos.html">om os+</a>
+        </div>
+    </nav>            
+    </header>
     
-    <!-- Nybegynder artikel begynder her -->
-    <section class="booking-content">
-        <article class="nybegynder-artikel">
-            <h2>Startertime - Alle er velkommene</h2>
-            <p>Velkommen til vores golfsimulator. Vi tilbyder en helt særlig nybegynder-course til dig, der er ny i golfens verden! Her kan du trygt tage dine første sving i et afslappet og sjovt miljø. Dette course varer en time, og er skabt med fokus på begyndere, så du hurtigt lærer de grundlæggende teknikker og får en god fornemmelse af hvordan man spiller golf.<span class="linebreak">Vores professionelle instruktører guider dig gennem hvert skridt, og du vil opleve, hvor sjovt og tilgængeligt golf kan være for alle. Uanset om du vil spille for sjov eller forbedre dine færdigheder, er dette kursus perfekt for dig. Kom og oplev golf på en ny måde!</span></p>
-        </article>
-
-        <aside class="nybegynder-img">
-            <img src="/img/booking-img.webp" alt="Golfbold der rammes af golfkølle">
-        </aside>
-    </section>
-
-</main>
-
-
-      <!--footer-->
-<footer class="footer">
-        <p>Åbningstider 06.00-23.30</p>
-        <p>Finderupvej 3, 8000 Aarhus C</p>
-        <p>+45 30706761</p>
-        <p>kontakt@golfsimulatoraarhus.dk</p>
-        <p>CVR: 44 82 93 12</p>
-        <p>Persondata politik</p>
-
-        <section class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61559586701062" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/golfsimulatoraarhus/" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
+    <main>
+        <!-- Overskrift og billede af kalender -->
+            <h1>Booking</h1>
+        <section class="knap">
+            <button class="button">
+                <span class="arrow-left"></span>
+                <span class="knap-tekst">Uge 47</span>
+                <span class="arrow-right"></span>
+            </button>            
         </section>
-</footer>
+
+        <!-- Kalender ikon -->
+        <section>
+            <img src="../img/kalender.webp" alt="kalender icon" class="kalender">
+        </section>
+
+        <!-- Kalender billede til desktop -->
+        <section>
+            <img src="../img/bookingweb.webp" alt="bookingside" class="bookingweb">
+        </section>
+
+        <!-- Kalender billede til mobil -->
+        <section>
+            <img src="../img/bookingmobile.webp" alt="bookingside" class="bookingmobile">
+        </section>
+
+        <!-- Courses artikler sektion begynder -->
+        <!-- Overskrift til sektionen -->
+        <section>
+            <aside class="courses-over">
+                <h2>Courses</h2>
+                </aside>
+        </section>
+
+        <!-- Artiklerne begynder -->
+        <section class="courses-afsnit">
+        
+            <article class="drv-mode">
+                <h3>Driving Range Mode</h3>
+                <p>Denne mode simulerer en virtuel driving range, hvor golfspillere kan øve deres slag, teste forskellige køller og analysere slagdata. Driving range mode giver ofte detaljeret feedback på målinger som boldhastighed, launch-vinkel, flyvedistance, spin-rate og svingbane. Det er ideelt for golfspillere, der ønsker at forbedre specifikke aspekter af deres spil uden at spille en fuld bane.</p>
+
+                
+            </article>
+            
+            <article class="full-mode">
+                <h3>Full Course Play</h3>
+                <p>Mange golfsimulatorer tilbyder virtuelle gengivelser af kendte golfbaner fra hele verden, så spillerne kan opleve en runde golf i realistiske omgivelser. I denne mode kan golfspillere spille en fuld 18-hullers runde alene eller med venner, med funktioner som vejrtuning, realistisk terræn og forhindringer som bunkers og vandhazarder. Det er perfekt til golfspillere, der ønsker fornemmelsen af at være på en rigtig bane uden at skulle rejse.</p>
+
+            
+            </article>
+
+            <article class="skill-mode">
+                <h3>Skills Challenge Mode</h3>
+                <p>Denne mode indeholder forskellige spil og udfordringer baseret på færdigheder, såsom nærmest-pinden konkurrencer, præcisionsudfordringer og puttetræning. Disse øvelser er designet til at gøre træningen sjov og konkurrencepræget, hvilket tilføjer en social dimension, der er fantastisk til grupper. Skills challenge mode kan hjælpe golfspillere med at finpudse specifikke dele af deres spil, som kortdistancepræcision eller putting-konsistens, samtidig med at de får lidt venskabelig konkurrence.</p>
+
+                
+            </article>
+        </section>
+
+        <!-- Infographic afsnit begynder -->
+    <section class="infographic">
+        <aside class="infographic-afsnit">
+            <h2 class="graphic-overskrift">Er du i tvivl om hvordan man spiller?</h2>
+            <img class="infographic-img" src="/img/infographic-booking.webp" alt="Infografik med en mand der spiller golf i midten">
+        </aside> 
+    </section>
+        
+        <!-- Nybegynder artikel begynder her -->
+        <section class="booking-content">
+            <article class="nybegynder-artikel">
+                <h2>Startertime - Alle er velkommene</h2>
+                <p>Velkommen til vores golfsimulator. Vi tilbyder en helt særlig nybegynder-course til dig, der er ny i golfens verden! Her kan du trygt tage dine første sving i et afslappet og sjovt miljø. Dette course varer en time, og er skabt med fokus på begyndere, så du hurtigt lærer de grundlæggende teknikker og får en god fornemmelse af hvordan man spiller golf.<span class="linebreak">Vores professionelle instruktører guider dig gennem hvert skridt, og du vil opleve, hvor sjovt og tilgængeligt golf kan være for alle. Uanset om du vil spille for sjov eller forbedre dine færdigheder, er dette kursus perfekt for dig. Kom og oplev golf på en ny måde!</span></p>
+            </article>
+
+            <aside class="nybegynder-img">
+                <img src="/img/booking-img.webp" alt="Golfbold der rammes af golfkølle">
+            </aside>
+        </section>
+
+    </main>
+
+
+        <!--footer-->
+    <footer class="footer">
+            <p>Åbningstider 06.00-23.30</p>
+            <p>Finderupvej 3, 8000 Aarhus C</p>
+            <p>+45 30706761</p>
+            <p>kontakt@golfsimulatoraarhus.dk</p>
+            <p>CVR: 44 82 93 12</p>
+            <p>Persondata politik</p>
+
+            <section class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61559586701062" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/golfsimulatoraarhus/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </section>
+    </footer>
 </body>
 </html>
