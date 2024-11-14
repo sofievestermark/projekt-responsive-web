@@ -692,7 +692,7 @@ right: 0;
     top:0;
     left:5px;
     right:5px;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     background: transparent;
     padding: 5px;
