@@ -28,7 +28,7 @@ body {
     text-align: center;
     background-color: black;
     min-width: 100vw;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 main {
@@ -51,7 +51,7 @@ a:-webkit-any-link {
     padding: 2vh 5vw;
     max-width: 80vw;
     text-align: center;
-    line-height: 1.6;
+    line-height: 2rem;
 }
 
 
@@ -234,7 +234,7 @@ h2, h1{
     padding-bottom: 10px;
     font-size: 3vw;
     color: #DEE2A4;
-    line-height: 1.7rem;
+    line-height: 3.5rem;
 }
 
 .sektion1{
