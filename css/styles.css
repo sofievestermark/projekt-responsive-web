@@ -706,7 +706,7 @@ text-align: center;
     }
     
     .logo{
-        width: 5rem;
+        width: 15vw;
     
     }
     
@@ -837,7 +837,7 @@ text-align: center;
     }
 
     .top {
-        background-image: linear-gradient(to bottom, transparent 60%, black 100%);
+        background-image: linear-gradient(to bottom, transparent 1%, black 100%);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -883,6 +883,8 @@ text-align: center;
         margin-top: 0;
         margin-bottom: 0;
     }
+
+
 
     .sektion1 {
         display: flex;
