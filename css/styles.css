@@ -210,7 +210,7 @@ header label {
 }
 
 
-h2{
+h2, h1{
     font-family: roca;
     padding-bottom: 10px;
     font-size: 3vw;
@@ -535,7 +535,7 @@ right: 0;
     }
     
     
-    h2{
+    h1, h2{
         font-family: roca;
         padding-bottom: 10px;
         font-size: 4vw;
@@ -819,7 +819,7 @@ right: 0;
         color: white !important;
     }
 
-    h2{
+    h1, h2{
         font-family: roca;
         padding-bottom: 10px;
         font-size: 5vw;
