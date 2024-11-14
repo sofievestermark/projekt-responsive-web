@@ -10,6 +10,9 @@
     --secundary-font: "Roca";
  }
   
+
+/* webskærm */
+@media only screen and (min-width: 1100px) {
 body {
     font-family: 'Lao Sangam MN', sans-serif;
     text-decoration: none;
@@ -20,7 +23,7 @@ body {
 }
 
 main {
-    background-image: url(../img/forsidetop1.webp);
+    background-image: url(../img/forsidetop1jpg.webp);
     background-position: initial;
     background-size: 100vw;
     min-width: 100vw !important;
@@ -40,6 +43,7 @@ a:-webkit-any-link {
     text-align: center;
     line-height: 1.6;
 }
+
 
 header {
     position: fixed;
@@ -157,6 +161,9 @@ header label {
     display: none;
 }
 
+.burgermenu {
+    display: none;
+}
 
 .top {
     background-image: linear-gradient(to bottom, transparent 60%, black 100%);
@@ -312,6 +319,7 @@ text-align: center;
     color: var(--primary-color); /* Highlight color on hover */
 }
 
+}
 
 @media screen and (max-width: 1099px){    
     body {
@@ -324,7 +332,7 @@ text-align: center;
     }
     
     main {
-        background-image: url(../img/forsidetop1.webp);
+        background-image: url(../img/forsidetop1jpg.webp);
         background-position: initial;
         background-size: 100vw !important;
         min-width: 100vw !important;
@@ -343,119 +351,137 @@ text-align: center;
         line-height: 1.6;
     }
     
-    header {
-        position: fixed;
-        top:0;
-        left: 1vw;
-        right:0;
-        width: 96vw;
-        z-index: 1000;
-        background: transparent;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-transform: uppercase;
-    }
-    
-    header .logo{
-        margin-left: 10px;
-        padding-left: 0;
-    }
-    
-    .logo{
-        width: 10vw;
-    }
-    
-    header .navbar ul {
-        list-style: none;
-    }
-    
-    header .navbar ul li {
-        position: relative;
-        float: left;
-    }
-    
-    /* Styling af hovedmenu og undermenu */
-    header .navbar ul li a {
-        box-sizing: border-box;
-        text-decoration: none;
-        font-size: 1vw;
-        font-family: 'Lao Sangam MN', sans-serif;
-        padding: 2vh 4vw;
-        color: white;
-        display: block;
-        text-align: center;
-    }
-    
-    header .navbar ul li a:hover {
-        background: rgba(0,0,0,0.1);
+   /* generel styling */
+   header {
+    position: fixed;
+    top:0;
+    left:5px;
+    right:5px;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+header .logo{
+    margin-left: 10px;
+    padding-left: 0;
+}
+
+.logo{
+    width: 150px;
+
+}
+
+.navbar {
+    display: none;
+}
+nav{
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,0.5);
         color: #fff;
+}
+
+nav .home-link{
+    margin-right: auto;  
+}
+
+nav svg .streger {
+    fill: white;
+}
+
+nav svg .kryds {
+    fill: rgb(0, 0, 0);
+}
+
+/* fjerner sidebar hvis vi havde brugt denne nav på web */
+#sidebar-active {
+    display: none;
+}
+
+/* fjerner ikoner hvis vi havde brugt denne nav på web */
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+
+/* styling for mobil specifikt */
+
+    .links-container{
+       flex-direction: column; /* vertikale menupunkter */
+       align-items: flex-start; /* paceret i venstre side af container */
+
+       position: fixed; /* nav baren følger med ved scroll */
+       top: 0;
+       right: -100%;
+       z-index: 10;
+       width: 300px;
+       color: black;
+
+       box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+       transition: 1s ease-out; /* smooth når man åbner baren */
+
     }
-    
-    /* Første niveau af undermenu */
-    header .navbar ul li ul {
-        box-sizing: border-box;
-        position: absolute;
-        left: 0;
-        width: 200px; /* Ensartet bredde */
-        background: transparent; /* Let baggrundsfarve for synlighed */
-        display: none;
-        padding: 0;
-    }
-    
-    header .navbar ul li ul li {
-        max-width: 100%; /* Ensartet bredde */
-        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
-    }
-    
-    /* Styling af undermenu links */
-    header .navbar ul li ul li a {
-        padding: 10px 0; /* Juster padding for centrering */
-        color: white; /* Sørger for, at teksten er synlig */
-        text-align: center;
-        max-width: 100%; /* Fyld hele bredden af menuen */
-        display: block;
-        box-sizing: border-box;
-    }
-    
-    header .navbar ul li ul li a:hover {
-        background: rgba(141, 137, 137, 0.2); /* Lysere hover for synlighed */
-    }
-    
-    /* Næste niveau af undermenu */
-    header .navbar ul li ul li ul {
-        left: 100%; /* Justering til højre for første undermenu */
-        top: 0;
-        width: 200px; /* Ensartet bredde */
-        background: transparent; /* Ensartet baggrund */
-        display: none;
-    }
-    
-    header .navbar ul li ul li ul a {
-        padding: 10px 0; /* Juster padding for centrering */
-        color: white; /* Sørger for synlig tekst */
-        text-align: center;
-        max-width: 100%; /* Fyld hele bredden af menuen */
-        display: block;
-        box-sizing: border-box;
-    }
-    
-    /* Hover-effekt til at vise undermenuer */
-    header .navbar ul li:hover > ul,
-    header .navbar ul li ul li:hover > ul {
-        display: block;
-    }
-    
-    #menu-bar {
-        display: none;
-    }
-    
-    header label {
-        font-size: 20px;
-        color: #333;
-        cursor: pointer;
-        display: none;
-    }
+nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start; 
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    padding: 20px;
+    display: block;
+}
+
+/* vi bruger pseudo klassen "checked" der beskriver hvad der sker når vi klikker menubaren*/
+
+#sidebar-active:checked ~ .links-container{
+right: 0;
+
+}
+/* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
+#sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+  #menu-bar {
+    display: none;
+}
     
     
     .top {
@@ -622,8 +648,140 @@ text-align: center;
     }
 }
 @media screen and (max-width: 600px){
+      /* generel styling */
+      header {
+        position: fixed;
+        top:0;
+        left:5px;
+        right:5px;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    
+    header .logo{
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    
+    .logo{
+        width: 150px;
+    
+    }
+    
+    .navbar {
+        display: none;
+    }
+    nav{
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .links-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--primary-color);
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav a:hover {
+        background: rgba(0,0,0,0.5);
+            color: #fff;
+    }
+    
+    nav .home-link{
+        margin-right: auto;  
+    }
+    
+    nav svg .streger {
+        fill: white;
+    }
+    
+    nav svg .kryds {
+        fill: rgb(0, 0, 0);
+    }
+    
+    /* fjerner sidebar hvis vi havde brugt denne nav på web */
+    #sidebar-active {
+        display: none;
+    }
+    
+    /* fjerner ikoner hvis vi havde brugt denne nav på web */
+    .open-sidebar-button, .close-sidebar-button {
+        display: none;
+    }
+    
+    /* styling for mobil specifikt */
+    
+        .links-container{
+           flex-direction: column; /* vertikale menupunkter */
+           align-items: flex-start; /* paceret i venstre side af container */
+    
+           position: fixed; /* nav baren følger med ved scroll */
+           top: 0;
+           right: -100%;
+           z-index: 10;
+           width: 300px;
+           color: black;
+    
+           box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+           transition: 1s ease-out; /* smooth når man åbner baren */
+    
+        }
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start; 
+    }
+    
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+    
+    /* vi bruger pseudo klassen "checked" der beskriver hvad der sker når vi klikker menubaren*/
+    
+    #sidebar-active:checked ~ .links-container{
+    right: 0;
+    
+    }
+    /* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    
+      #menu-bar {
+        display: none;
+    }
+   
     main {
-        background-image: url(../img/forsidetop1.webp);
+        background-image: url(../img/forsidetop1jpg.webp);
         background-position: initial;
         background-size: 100vw !important;
         min-width: 100vw!important;
