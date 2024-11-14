@@ -166,9 +166,16 @@ h1 {
 h2{
     color: var(--primary-color);
     font-family: var(--secundary-font);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
+
+h3 {
+    font-family: var(--secundary-font);
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
 
 .kalender {
     display: none;
@@ -236,43 +243,75 @@ button.button {
     display: none;/* fjerner billede*/
 }
 
+/* Styling af artikler */
 .booking-content{
     display: flex;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    
+    margin: 5rem 3rem 3rem 3rem;
 }
 
 .nybegynder-artikel{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    text-align: left;
+    width: 90%;
+}
+
+.nybegynder-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+    
+}
+
+.nybegynder-img img{
+    width: 80%;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.05);
 }
 
 .linebreak{
     display: block;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+}
+
+.infographic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .infographic-afsnit{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width:50%;
-    margin-top: 3rem;
-}
-
-.graphic-overskrift{
-    font-size: 1.2rem;
-}
-
-.infographic-img{
-    width: 50%;
     
 }
 
+.infographic-img{
+    width: 70%;    
+}
 
+.courses-over{
+    display:flex;
+    justify-content:center;
+}
 
+.courses-afsnit{
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.drv-mode, .full-mode, .skill-mode{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+    width: 50%;
+    height: 80%;
+    padding: 2rem;
+}
 
 
 .footer {
@@ -463,7 +502,10 @@ button.button {
         color: white;
         text-align: center;
         padding: 20px;
+        line-height: 1.5rem;
     }
+
+    /* Styling af overskrifter */
     h1 {
         color: var(--primary-color, #DEE2A4);
         font-size: 2.5rem;
@@ -471,6 +513,20 @@ button.button {
         font-family: var(--secundary-font);
         margin-top: 40px;
     }
+
+    h2{
+        color: var(--primary-color);
+        font-family: var(--secundary-font);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    h3 {
+        font-family: var(--secundary-font);
+        color: var(--primary-color);
+        padding-bottom: 1rem;
+    }
+    
 
     .kalender {
         display: none;
@@ -533,13 +589,87 @@ button.button {
     .bookingweb {
         width: 80%; 
         object-fit: cover;
-        padding-bottom: 20%;
+        padding-bottom:2.5rem;
     }
     
     .bookingmobile {
         display: none;/* fjerner billede*/
     }
     
+    /* Styling af artikler */
+    .courses-over{
+        display:flex;
+        justify-content:center;
+    }
+    
+    .courses-afsnit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .drv-mode, .full-mode, .skill-mode{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+    }
+
+.infographic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infographic-afsnit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    
+}
+
+.infographic-img{
+    width: 70%;    
+}
+
+
+.booking-content{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+.nybegynder-artikel{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.nybegynder-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+    width: 100%;
+}
+
+.nybegynder-img img{
+    width: 80%;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.linebreak{
+    display: block;
+    margin-top: 2.5rem;
+}
+
+    /* footer */
     .footer {
         background-color:black; 
         color: white; 
@@ -724,8 +854,10 @@ button.button {
         color: white;
         text-align: center;
         padding: 20px;
+        line-height: 1.5rem;
     }
     
+    /* Styling af overskrifter */
     h1 {
         color: var(--primary-color, #DEE2A4);
         font-size: 2.5rem;
@@ -733,14 +865,28 @@ button.button {
         font-family: var(--secundary-font);
         margin-top: 40px;
     }
-.kalender {
+
+    h2{
+        color: var(--primary-color);
+        font-family: var(--secundary-font);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    h3 {
+        font-family: var(--secundary-font);
+        color: var(--primary-color);
+        padding-bottom: 1rem;
+    }
+
+    .kalender {
     width: 10%;
     justify-content: center;
     padding-bottom: 5%;
     padding-top: 10%;
 }
     .knap{
-        display: none;
+        display: none; 
     }
 
     .bookingweb {
@@ -750,21 +896,100 @@ button.button {
     .bookingmobile {
         width: 70%; 
         object-fit: cover;
-        padding-bottom: 25%;
+        padding-bottom: 3rem;
     }
     
+        /* Styling af artikler */
+        .courses-over{
+            display:flex;
+            justify-content:center;
+        }
+        
+        .courses-afsnit{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .drv-mode, .full-mode, .skill-mode{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            height: 100%;
+            padding: 2rem;
+        }
+    
+    .infographic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .infographic-afsnit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:80%;
+        
+    }
+    
+    .infographic-img{
+        width: 70%;    
+    }
+    
+    
+    .booking-content{
+        display: flex;
+        flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+       margin-top: 3rem;
+    }
+    
+    .nybegynder-artikel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .nybegynder-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .nybegynder-img img{
+        width: 70%;
+        box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.05);
+    }
+    
+    .linebreak{
+        display: block;
+        margin-top: 2.5rem;
+    }
+
+
+    /* Styling af footer */
     .footer {
         background-color:black; 
         color: white; 
         text-align: center; 
-        padding: 20px; /* luft omkring footer */
+        padding: 1rem; /* luft omkring footer */
         position: relative; /* får den til at blive i midten */
-        padding-top: 90px;
+        margin-top: 3rem;
         border-top: 1px solid var(--primary-color);
     }
     
     .footer p {
-        margin: 5px 0; /* linjeafstand mellem de forskellige p'er */
+        margin: 0.6rem 0; /* linjeafstand mellem de forskellige p'er */
         font-size: 0.9rem; 
         color: white;
     }
