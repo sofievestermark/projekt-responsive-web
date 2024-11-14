@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    background-image: url(../img/forsidetop1.jpg);
+    background-image: url(../img/forsidetop\(1\).webp);
     background-position: initial;
     background-size: 100vw;
     min-width: 100vw !important;
@@ -180,7 +180,7 @@ display: none;
     background-position: center;
     background-repeat: no-repeat;
     min-width: 100vw; /*skal muligvis ændres */
-    min-height: 110vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
     align-items: center;
@@ -348,7 +348,7 @@ text-align: center;
     }
     
     main {
-        background-image: url(../img/forsidetop1jpg.webp);
+        background-image: url(../img/forsidetop\(1\).webp);
         background-position: initial;
         background-size: 100vw !important;
         min-width: 100vw !important;
@@ -817,7 +817,7 @@ right: 0;
 }
    
     main {
-        background-image: url(../img/forsidetop1jpg.webp);
+        background-image: url(../img/forsidetop\(1\).webp);
         background-position: initial;
         background-size: 100vw !important;
         min-width: 100vw!important;
