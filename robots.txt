@@ -1,3 +1,3 @@
 user-agent:*
 disallow:
-sitemap: (link her til sitemap, på samme måde som du linker en css fil i html)
+sitemap: https://www.xml-sitemaps.com/download/responsive-web.michellebirkkjaer.dk-2d584db48/sitemap.xml?view=1
