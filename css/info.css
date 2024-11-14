@@ -67,12 +67,12 @@
 
     /* Header logo */
     header .logo{
-        margin-left: 0.8rem;
+        margin-left: 10px;
         padding-left: 0;
     }
 
     .logo{
-        width: 9rem;
+        width: 10vw;
 
     }
 
@@ -407,7 +407,7 @@
     }
     
     .logo{
-        width: 150px;
+        width: 15vw;
     
     }
     
@@ -776,7 +776,7 @@ main {
     }
     
     .logo{
-        width: 150px;
+        width: 15vw;
     
     }
     
