@@ -368,7 +368,7 @@ button.button {
 
 
 /* tablet */
-@media only screen and (min-width: 600px) and (max-width: 1099px) {
+@media only screen and (min-width: 601px) and (max-width: 1099px) {
      /* generel styling af header */
      header {
         position: fixed;
@@ -558,14 +558,19 @@ button.button {
 /* Styling af knap */
 .button {
     font-size: larger;
-    font-family: lao sangam MN; 
+    font-family: lao sangam MN;
     border-radius: 40%;
-    padding: 15px 35px;
+    padding: 20px 50px;
     background-color: transparent;
     color: white;
     border: 2px solid white;
     transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
 }
+
 button.button {
     display: flex;
     justify-content: flex-start;
@@ -582,30 +587,34 @@ button.button {
     padding-top: 5%;
 }
 
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:15px solid #757474 ;
+}
+
 .arrow-right {
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 15px solid #757474; /* Arrow color */
-  }
+    border-left:15px solid #757474 ;
+}
 
-  .arrow-left {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 15px solid #757474; /* Arrow color */
-  }
 
-  p{
+  .knap-tekst{
     font-size: 1rem;
         line-height: 1.5;
         margin-bottom: 10px;
         color: var(--primary-color);
         margin-right: 1rem;
         margin-left: 1rem;
+        display: block;
+        padding-top: 0.5rem;
   }
+
 
 /* billeder */
 
@@ -665,13 +674,17 @@ button.button {
 /* Styling af nybegynder artikel */
 .booking-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     margin: 3rem 3rem 3rem 3rem;
 }
 
 .nybegynder-artikel{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 70%;
 }
 
@@ -680,11 +693,13 @@ button.button {
     justify-content: center;
     align-items: center;
     margin-left: 4rem;
-    width: 100%;
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+    width: 90%;
 }
 
 .nybegynder-img img{
-    width: 80%;
+    width: 100%;
     box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.05);
 }
 
