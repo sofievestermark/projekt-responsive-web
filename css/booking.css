@@ -130,11 +130,15 @@
     #menu-bar {
         display: none;
     }
-    
+  
     header label {
         font-size: 20px;
         color: #333;
         cursor: pointer;
+        display: none;
+    }
+
+    .burgermenu {
         display: none;
     }
 
@@ -384,97 +388,112 @@ button.button {
     
     }
     
-    header .navbar ul {
-        list-style: none;
+    .navbar {
+        display: none;
+    }
+    nav{
+        height: 60px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
     
-    header .navbar ul li {
-        position: relative;
-        float: left;
+    .links-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     
-    
-    /* Styling af hovedmenu og undermenu */
-    header .navbar ul li a {
-        box-sizing: border-box;
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
         text-decoration: none;
-        font-size: 15px;
-        font-family: 'Lao Sangam MN', sans-serif;
-        padding: 18px 70px;
         color: white;
-        display: block;
-        text-align: center;
     }
     
-    header .navbar ul li a:hover {
-        background: rgba(0,0,0,0.1);
-        color: #fff;
+    nav a:hover {
+        background: rgba(0,0,0,0.5);
+            color: #fff;
     }
     
-    /* Første niveau af undermenu */
-    header .navbar ul li ul {
-        box-sizing: border-box;
-        position: absolute;
-        left: 0;
-        width: 200px; /* Ensartet bredde */
-        background: transparent; /* Let baggrundsfarve for synlighed */
+    nav .home-link{
+        margin-right: auto;  
+    }
+    
+    nav svg {
+        fill: white;
+    }
+    
+    /* fjerner sidebar hvis vi havde brugt denne nav på web */
+    #sidebar-active {
         display: none;
-        padding: 0;
     }
     
-    header .navbar ul li ul li {
-        width: 100%; /* Ensartet bredde */
-        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
+    /* fjerner ikoner hvis vi havde brugt denne nav på web */
+    .open-sidebar-button, .close-sidebar-button {
+        display: none;
     }
     
-    /* Styling af undermenu links */
-    header .navbar ul li ul li a {
-        padding: 10px 0; /* Juster padding for centrering */
-        color: white; /* Sørger for, at teksten er synlig */
-        text-align: center;
-        width: 100%; /* Fyld hele bredden af menuen */
-        display: block;
+    /* styling for mobil specifikt */
+    
+        .links-container{
+           flex-direction: column; /* vertikale menupunkter */
+           align-items: flex-start; /* paceret i venstre side af container */
+    
+           position: fixed; /* nav baren følger med ved scroll */
+           top: 0;
+           right: -100%;
+           z-index: 10;
+           width: 300px;
+           color: black;
+    
+           box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+           transition: 1s ease-out; /* smooth når man åbner baren */
+    
+        }
+    nav a {
         box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start; 
     }
     
-    header .navbar ul li ul li a:hover {
-        background: rgba(141, 137, 137, 0.2); /* Lysere hover for synlighed */
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
     }
     
-    /* Næste niveau af undermenu */
-    header .navbar ul li ul li ul {
-        left: 100%; /* Justering til højre for første undermenu */
+    /* vi bruger pseudo klassen "checked" der beskriver hvad der sker når vi klikker menubaren*/
+    
+    #sidebar-active:checked ~ .links-container{
+    right: 0;
+    
+    }
+    /* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
         top: 0;
-        width: 200px; /* Ensartet bredde */
-        background: transparent; /* Ensartet baggrund */
+        left: 0;
+        z-index: 9;
+    }
+    
+      #menu-bar {
         display: none;
     }
-    
-    header .navbar ul li ul li ul a {
-        padding: 10px 0; /* Juster padding for centrering */
-        color: white; /* Sørger for synlig tekst */
-        text-align: center;
-        width: 100%; /* Fyld hele bredden af menuen */
-        display: block;
-        box-sizing: border-box;
-    }
-    
-    /* Hover-effekt til at vise undermenuer */
-    header .navbar ul li:hover > ul,
-    header .navbar ul li ul li:hover > ul {
-        display: block;
-    }
-    
-    #menu-bar {
-        display: none;
-    }
-    
-    header label {
-        font-size: 20px;
-        color: #333;
-        cursor: pointer;
-        display: none;
-    }
+
+    main {
+        padding-bottom: 10%;   
+        padding-top: 15%;
+       }
+   
     
     body {
         /* font-family:"Roca"; */
@@ -723,98 +742,111 @@ button.button {
     
     }
     
-    header .navbar ul {
-        list-style: none;
+    .navbar {
+        display: none;
+    }
+    nav{
+        height: 60px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
     
-    header .navbar ul li {
-        position: relative;
-        float: left;
+    .links-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     
-    
-    /* Styling af hovedmenu og undermenu */
-    header .navbar ul li a {
-        box-sizing: border-box;
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
         text-decoration: none;
-        font-size: 15px;
-        font-family: 'Lao Sangam MN', sans-serif;
-        padding: 18px 70px;
         color: white;
-        display: block;
-        text-align: center;
     }
     
-    header .navbar ul li a:hover {
-        background: rgba(0,0,0,0.1);
-        color: #fff;
+    nav a:hover {
+        background: rgba(0,0,0,0.5);
+            color: #fff;
     }
     
-    /* Første niveau af undermenu */
-    header .navbar ul li ul {
-        box-sizing: border-box;
-        position: absolute;
-        left: 0;
-        width: 200px; /* Ensartet bredde */
-        background: transparent; /* Let baggrundsfarve for synlighed */
+    nav .home-link{
+        margin-right: auto;  
+    }
+    
+    nav svg {
+        fill: white;
+    }
+    
+    /* fjerner sidebar hvis vi havde brugt denne nav på web */
+    #sidebar-active {
         display: none;
-        padding: 0;
     }
     
-    header .navbar ul li ul li {
-        width: 100%; /* Ensartet bredde */
-        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
+    /* fjerner ikoner hvis vi havde brugt denne nav på web */
+    .open-sidebar-button, .close-sidebar-button {
+        display: none;
     }
     
-    /* Styling af undermenu links */
-    header .navbar ul li ul li a {
-        padding: 10px 0; /* Juster padding for centrering */
-        color: white; /* Sørger for, at teksten er synlig */
-        text-align: center;
-        width: 100%; /* Fyld hele bredden af menuen */
-        display: block;
+    /* styling for mobil specifikt */
+    
+        .links-container{
+           flex-direction: column; /* vertikale menupunkter */
+           align-items: flex-start; /* paceret i venstre side af container */
+    
+           position: fixed; /* nav baren følger med ved scroll */
+           top: 0;
+           right: -100%;
+           z-index: 10;
+           width: 300px;
+           color: black;
+    
+           box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+           transition: 1s ease-out; /* smooth når man åbner baren */
+    
+        }
+    nav a {
         box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start; 
     }
     
-    header .navbar ul li ul li a:hover {
-        background: rgba(141, 137, 137, 0.2); /* Lysere hover for synlighed */
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
     }
     
-    /* Næste niveau af undermenu */
-    header .navbar ul li ul li ul {
-        left: 100%; /* Justering til højre for første undermenu */
+    /* vi bruger pseudo klassen "checked" der beskriver hvad der sker når vi klikker menubaren*/
+    
+    #sidebar-active:checked ~ .links-container{
+    right: 0;
+    
+    }
+    /* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
         top: 0;
-        width: 200px; /* Ensartet bredde */
-        background: transparent; /* Ensartet baggrund */
+        left: 0;
+        z-index: 9;
+    }
+    
+      #menu-bar {
         display: none;
     }
-    
-    header .navbar ul li ul li ul a {
-        padding: 10px 0; /* Juster padding for centrering */
-        color: white; /* Sørger for synlig tekst */
-        text-align: center;
-        width: 100%; /* Fyld hele bredden af menuen */
-        display: block;
-        box-sizing: border-box;
-    }
-    
-    /* Hover-effekt til at vise undermenuer */
-    header .navbar ul li:hover > ul,
-    header .navbar ul li ul li:hover > ul {
-        display: block;
-    }
-    
-    #menu-bar {
-        display: none;
-    }
-    
-    header label {
-        font-size: 20px;
-        color: #333;
-        cursor: pointer;
-        display: none;
-    }
-    
+    main {
+        padding-bottom: 10%;   
+        padding-top: 20%;
+       }
+
     body {
         /* font-family:"Roca"; */
         font-family: 'Lao Sangam MN', sans-serif;

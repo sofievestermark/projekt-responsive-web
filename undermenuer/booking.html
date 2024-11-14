@@ -19,7 +19,7 @@
     <a href="../index.html"><img src="../img/logo.webp" alt="logo" class="logo"></a></img>
 </section>
 <input type="checkbox" id="menu-bar">
-<label for="menu-bar">Menu</label>
+<label for="menu-bar"></label>
 
 <nav class="navbar">
     <ul>
@@ -74,6 +74,27 @@
         </li>
     </ul>
 </nav>
+
+<!-- burgermenu lavet vha. https://www.youtube.com/watch?v=8eFeIFKAKHw&list=WL&index=62 -->
+
+<nav class="burgermenu">
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button"> <!-- de tre streger -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+
+    <label id="overlay" for="sidebar-active"></label> <!-- den der gør at vi kommer ud af sidebaren når vi trykker et andet sted på skærmen -->
+
+    <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button"> <!-- krydset -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>        
+        </label>
+        <a href="#">priser</a>
+        <a href="../undermenuer/booking.html">booking</a>
+        <a href="../undermenuer/info-om-udstyr.html">Info om udstyr</a>
+        <a href="../undermenuer/omos.html">om os</a>
+    </div>
+</nav>            
 </header>
 <body>
 <main>
@@ -84,16 +105,16 @@
     </section>
 
     <section>
-        <img src="../img/kalender.png" alt="kalender icon" class="kalender">
+        <img src="../img/kalender.webp" alt="kalender icon" class="kalender">
     </section>
 
     </section>
     <section>
-        <img src="../img/bookingweb.png" alt="bookingside" class="bookingweb">
+        <img src="../img/bookingweb.webp" alt="bookingside" class="bookingweb">
     </section>
 
     <section>
-        <img src="../img/bookingmobile.png" alt="bookingside" class="bookingmobile">
+        <img src="../img/bookingmobile.webp" alt="bookingside" class="bookingmobile">
     </section>
 
     <section>
@@ -129,7 +150,7 @@
    <section class="infographic">
     <aside class="infographic-afsnit">
         <h2 class="graphic-overskrift">Er du i tvivl om hvordan man spiller?</h2>
-        <img class="infographic-img" src="/img/infographic-booking.png" alt="Infografik med en mand der spiller golf i midten">
+        <img class="infographic-img" src="/img/infographic-booking.webp" alt="Infografik med en mand der spiller golf i midten">
     </aside> 
    </section>
     
@@ -140,7 +161,7 @@
         </article>
 
         <aside class="nybegynder-img">
-            <img src="/img/booking-img.png" alt="Golfbold der rammes af golfkølle">
+            <img src="/img/booking-img.webp" alt="Golfbold der rammes af golfkølle">
         </aside>
     </section>
     

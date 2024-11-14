@@ -153,24 +153,25 @@
 }
 
 main {
- padding-bottom: 170px;   
+ padding-bottom: 10%;   
+ padding-top: 10%;
 }
 
 .om-os {
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 5%;
 }
 
-.billeder {
+section.billeder {
     display: flex;
     justify-content: center;
     gap: 10px; /* den lille luft mellem billederne */
     margin-bottom: 20px;
 }
 
-.image {
-    width: 60%; /* Adjust to fit 3 images horizontally */
+img.image {
+    width: 50%; /* Adjust to fit 3 images horizontally */
     object-fit: cover;
    
 }
@@ -238,201 +239,16 @@ p {
 
 
 
+
+
+
+
+
+
+
+
 /* tablet */
 @media only screen and (min-width: 600px) and (max-width: 1099px) {
-    .burgermenu {
-        display: none;
-    }
-    header {
-        position: fixed;
-        top:0;
-        left:5px;
-        right:5px;
-        width: 100%;
-        z-index: 1000;
-        background: transparent;
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-transform: uppercase;
-    }
-    
-    header .logo{
-        margin-left: 10px;
-        padding-left: 0;
-    }
-    
-    .logo{
-        width: 150px;
-    
-    }
-    
-    header .navbar ul {
-        list-style: none;
-    }
-    
-    header .navbar ul li {
-        position: relative;
-        float: left;
-    }
-    
-    
-    /* Styling af hovedmenu og undermenu */
-    header .navbar ul li a {
-        box-sizing: border-box;
-        text-decoration: none;
-        font-size: 15px;
-        font-family: 'Lao Sangam MN', sans-serif;
-        padding: 18px 70px;
-        color: white;
-        display: block;
-        text-align: center;
-    }
-    
-    header .navbar ul li a:hover {
-        background: rgba(0,0,0,0.1);
-        color: #fff;
-    }
-    
-    /* Første niveau af undermenu */
-    header .navbar ul li ul {
-        box-sizing: border-box;
-        position: absolute;
-        left: 0;
-        width: 200px; /* Ensartet bredde */
-        background: transparent; /* Let baggrundsfarve for synlighed */
-        display: none;
-        padding: 0;
-    }
-    
-    header .navbar ul li ul li {
-        width: 100%; /* Ensartet bredde */
-        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
-    }
-    
-    /* Styling af undermenu links */
-    header .navbar ul li ul li a {
-        padding: 10px 0; /* Juster padding for centrering */
-        color: white; /* Sørger for, at teksten er synlig */
-        text-align: center;
-        width: 100%; /* Fyld hele bredden af menuen */
-        display: block;
-        box-sizing: border-box;
-    }
-    
-    header .navbar ul li ul li a:hover {
-        background: rgba(141, 137, 137, 0.2); /* Lysere hover for synlighed */
-    }
-    
-    /* Næste niveau af undermenu */
-    header .navbar ul li ul li ul {
-        left: 100%; /* Justering til højre for første undermenu */
-        top: 0;
-        width: 200px; /* Ensartet bredde */
-        background: transparent; /* Ensartet baggrund */
-        display: none;
-    }
-    
-    header .navbar ul li ul li ul a {
-        padding: 10px 0; /* Juster padding for centrering */
-        color: white; /* Sørger for synlig tekst */
-        text-align: center;
-        width: 100%; /* Fyld hele bredden af menuen */
-        display: block;
-        box-sizing: border-box;
-    }
-    
-    /* Hover-effekt til at vise undermenuer */
-    header .navbar ul li:hover > ul,
-    header .navbar ul li ul li:hover > ul {
-        display: block;
-    }
-    
-    #menu-bar {
-        display: none;
-    }
-    
-    header label {
-        font-size: 20px;
-        color: #333;
-        cursor: pointer;
-        display: none;
-    }
-
-    body {
-        font-family: 'Lao Sangam MN', sans-serif;
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 20px;
-    }
-    .om-os {
-        max-width: 700px;
-        margin: 0 auto;
-        margin-top: 60px;
-        margin-bottom: 90px;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    .billeder {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-        margin-bottom: 15px;
-    }
-    .image {
-        width: 45%; /* Adjust image width for tablet */
-        object-fit: cover;
-    }
-
-    /* fjerner slideshow */
-    .container{
-        display: none;
-    }
-
-    h1 {
-        color: var(--primary-color, #DEE2A4);
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-        font-family: var(--secundary-font);
-        margin-top: 40px;
-    }
-    p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 10px;
-    }
-    .footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        position: relative;
-        padding-top: 60px;
-        border-top: 1px solid var(--primary-color);
-    }
-    .footer p {
-        margin: 5px 0;
-        font-size: 0.9rem;
-    }
-    .social-icons {
-        margin-top: 10px;
-    }
-    .social-icons a {
-        margin: 0 8px;
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
-    }
-    .social-icons a:hover {
-        color: var(--primary-color);
-    }
-}
-
-/* Mobil */
-@media only screen and (max-width: 600px) {
-   /* generel styling */
     header {
         position: fixed;
         top:0;
@@ -487,7 +303,8 @@ p {
     }
     
     nav a:hover {
-        background-color: gray;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
     }
     
     nav .home-link{
@@ -508,7 +325,7 @@ p {
         display: none;
     }
     
-/* styling for mobil specifikt */
+/* styling for mobil/tablet specifikt */
    
         .links-container{
            flex-direction: column; /* vertikale menupunkter */
@@ -554,7 +371,7 @@ p {
         z-index: 9;
     }
   
-    }
+
 
     body {
         font-family: 'Lao Sangam MN', sans-serif;
@@ -575,6 +392,261 @@ p {
 #menu-bar {
     display: none;
 }
+    
+    header label {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        display: none;
+    }
+
+    body {
+        font-family: 'Lao Sangam MN', sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    main {
+        padding-bottom: 10%;   
+        padding-top: 10%;
+       }
+       
+    
+    .om-os {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 90px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    section.billeder {
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        margin-bottom:5%;
+    }
+
+    img.image {
+        width: 45%; /* Adjust image width for tablet */
+        object-fit: cover;
+    }
+
+    /* fjerner slideshow */
+    .container{
+        display: none;
+    }
+
+    h1 {
+        color: var(--primary-color, #DEE2A4);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-family: var(--secundary-font);
+        margin-top: 40px;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        padding-top: 60px;
+        border-top: 1px solid var(--primary-color);
+    }
+    .footer p {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .social-icons a {
+        margin: 0 8px;
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .social-icons a:hover {
+        color: var(--primary-color);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobil */
+@media only screen and (max-width: 600px) {
+   /* generel styling */
+   header {
+    position: fixed;
+    top:0;
+    left:5px;
+    right:5px;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+header .logo{
+    margin-left: 10px;
+    padding-left: 0;
+}
+
+.logo{
+    width: 150px;
+
+}
+
+.navbar {
+    display: none;
+}
+nav{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,0.5);
+        color: #fff;
+}
+
+nav .home-link{
+    margin-right: auto;  
+}
+
+nav svg {
+    fill: white;
+}
+
+/* fjerner sidebar hvis vi havde brugt denne nav på web */
+#sidebar-active {
+    display: none;
+}
+
+/* fjerner ikoner hvis vi havde brugt denne nav på web */
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+
+/* styling for mobil specifikt */
+
+    .links-container{
+       flex-direction: column; /* vertikale menupunkter */
+       align-items: flex-start; /* paceret i venstre side af container */
+
+       position: fixed; /* nav baren følger med ved scroll */
+       top: 0;
+       right: -100%;
+       z-index: 10;
+       width: 300px;
+       color: black;
+
+       box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+       transition: 1s ease-out; /* smooth når man åbner baren */
+
+    }
+nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start; 
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    padding: 20px;
+    display: block;
+}
+
+/* vi bruger pseudo klassen "checked" der beskriver hvad der sker når vi klikker menubaren*/
+
+#sidebar-active:checked ~ .links-container{
+right: 0;
+
+}
+/* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
+#sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+  #menu-bar {
+    display: none;
+}
+    
+main {
+    padding-bottom: 10%;   
+    padding-top: 10%;
+   }
+    
+body {
+        font-family: 'Lao Sangam MN', sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+.om-os {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20%;
+    }
+
+
    
 /* fjerner alm. billeder der ikke er i slideshow */
     .billeder{
@@ -675,4 +747,5 @@ p {
 
     .social-icons a:hover {
         color: var(--primary-color);
+    }
     }
