@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-
+/* Root for fonts og farver gennem siden */
 :root {
     --primary-color:#DEE2A4;
     --primary-font: "Lao Sangam MN";
@@ -18,6 +18,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 
 
 /* Desktop styling */
@@ -40,12 +41,14 @@
         line-height: 1.5rem;
     }
 
+    /* Styling af links */
     a:-webkit-any-link {
         color: -webkit-link;
         text-decoration: none; /* Fjerner den underliggende streg */
         color: inherit; /* Arver farven fra omgivende elementer */ 
     }
 
+    /* Styling af header */
     header {
         position: fixed;
         top:0;
@@ -62,6 +65,7 @@
         text-transform: uppercase;
     }
 
+    /* Header logo */
     header .logo{
         margin-left: 10px;
         padding-left: 0;
@@ -72,6 +76,7 @@
 
     }
 
+    /* Styling af hovedmenupunkterne */
     header .navbar ul {
         list-style: none;
     }
@@ -94,6 +99,7 @@
         text-align: center;
     }
 
+    /* Hovereffekt til menupunkterne */
     header .navbar ul li a:hover {
         background: rgba(0,0,0,0.1);
         color: #fff;
@@ -153,9 +159,11 @@
         display: block;
     }
 
+    /* Gemmer checkboxen */
     #menu-bar {
         display: none;
     }
+
 
     header label {
         font-size: 20px;
@@ -164,6 +172,7 @@
         display: none;
     }
 
+    /* Styling af navigationsbar/burgermenu til mobil og tablet */
 .burgermenu{
     display: none;
 }
@@ -374,138 +383,146 @@
 /* Styling af siden til Mobil */
 @media screen and (max-width:600px) {
     
-         /* generel styling */
-   header {
-    position: fixed;
-    top:0;
-    left:5px;
-    right:5px;
-    width: 100%;
-    z-index: 1000;
-    background: transparent;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-transform: uppercase;
-}
-
-header .logo{
-    margin-left: 10px;
-    padding-left: 0;
-}
-
-.logo{
-    width: 150px;
-}
-
-.navbar {
-    display: none;
-}
-nav{
-    height: 60px;
-    /* background-color: black; */
-    background-color: transparent;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.links-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--primary-color);
-}
-
-nav a{
-    height: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
-
-nav a:hover {
-    background: rgba(0,0,0,0.5);
-        color: #fff;
-}
-
-nav .home-link{
-    margin-right: auto;  
-}
-
-nav svg .streger {
-    fill: white;
-}
-
-nav svg .kryds {
-    fill: rgb(0, 0, 0);
-}
-
-/* fjerner sidebar hvis vi havde brugt denne nav på web */
-#sidebar-active {
-    display: none;
-}
-
-/* fjerner ikoner hvis vi havde brugt denne nav på web */
-.open-sidebar-button, .close-sidebar-button {
-    display: none;
-}
-
-/* styling for mobil specifikt */
-
-    .links-container{
-       flex-direction: column; /* vertikale menupunkter */
-       align-items: flex-start; /* paceret i venstre side af container */
-
-       position: fixed; /* nav baren følger med ved scroll */
-       top: 0;
-       right: -100%;
-       z-index: 10;
-       width: 300px;
-       color: black;
-
-       box-shadow: -5px 0 5px rgba(0,0,0,0.25);
-       transition: 1s ease-out; /* smooth når man åbner baren */
-
+     /* generel styling af header */
+     header {
+        position: fixed;
+        top:0;
+        left:5px;
+        right:5px;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
     }
-nav a {
-    box-sizing: border-box;
-    height: auto;
-    width: 100%;
-    padding: 20px 30px;
-    justify-content: flex-start; 
-}
-
-/* styling at de tre streger og krydset */
-.open-sidebar-button, .close-sidebar-button {
-    padding: 20px;
-    display: block;
-}
-
-/* vi bruger pseudo klassen "checked" der gør at vi kan trykke på menuen*/
-
-#sidebar-active:checked ~ .links-container{
-right: 0;
-
-}
-/* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
-#sidebar-active:checked ~ #overlay{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
-}
-
-  #menu-bar {
-    display: none;
-}
+    
+    header .logo{
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    
+    .logo{
+        width: 150px;
+    
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    nav{
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    /* den boks der folder ud når man klikker de tre prikker */
+    .links-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--primary-color);
+    }
+    
+    
+    /* styling af tekst */
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    nav a:hover {
+        background: rgba(0,0,0,0.5);
+            color: #fff;
+    }
+    
+    /* benyttet i den video vi har fulgt, men ikke relevant for os */
+    /* nav .home-link{
+        margin-right: auto;  
+    } */
+    
+    
+    /* ikoner */
+    nav svg .streger {
+        fill: white;
+    }
+    
+    nav svg .kryds {
+        fill: rgb(0, 0, 0);
+    }
+    
+    /* fjerner sidebar hvis vi havde brugt denne nav på web */
+    #sidebar-active {
+        display: none;
+    }
+    
+    /* fjerner ikoner hvis vi havde brugt denne nav på web */
+    .open-sidebar-button, .close-sidebar-button {
+        display: none;
+    }
+    
+    /* styling for mobil specifikt */
+    
+    /* styling af selve burgermenuen (når man har klikket på stregerne) */
+        .links-container{
+           flex-direction: column; /* vertikale menupunkter */
+           align-items: flex-start; /* paceret i venstre side af container */
+    
+           position: fixed; /* nav baren følger med ved scroll */
+           top: 0;
+           right: -100%;
+           z-index: 10;
+           width: 300px;
+           color: black;
+    
+           box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+           transition: 1s ease-out; /* smooth når man åbner baren */
+    
+        }
+    
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start; 
+    }
+    
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+    
+    /* ~ styler links-container hvis det er søskende til #sidebar-active */
+    /* pseudo klassen :cheked styler/reagerer når ikonet er "checked" altså når vi trykker på de tre streger*/
+    #sidebar-active:checked ~ .links-container{
+    right: 0;
+    
+    }
+    /* sørger for at vi klikker ud fra menu'en når vi klikker et andet sted på siden */
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    
+      #menu-bar {
+        display: none;
+    }
     
 main {
     padding-bottom: 10%;   
@@ -733,8 +750,8 @@ main {
 /* Media quiery til tablet */
 @media only screen and (min-width: 601px) and (max-width: 1099px){
 
-       /* generel styling */
-       header {
+     /* generel styling af header */
+     header {
         position: fixed;
         top:0;
         left:5px;
@@ -762,6 +779,7 @@ main {
     .navbar {
         display: none;
     }
+    
     nav{
         height: 60px;
         background-color: transparent;
@@ -770,6 +788,7 @@ main {
         align-items: center;
     }
     
+    /* den boks der folder ud når man klikker de tre prikker */
     .links-container {
         height: 100%;
         width: 100%;
@@ -779,13 +798,15 @@ main {
         background-color: var(--primary-color);
     }
     
+    
+    /* styling af tekst */
     nav a{
         height: 100%;
         padding: 0 20px;
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: white;
+        color: black;
     }
     
     nav a:hover {
@@ -793,10 +814,13 @@ main {
             color: #fff;
     }
     
-    nav .home-link{
+    /* benyttet i den video vi har fulgt, men ikke relevant for os */
+    /* nav .home-link{
         margin-right: auto;  
-    }
+    } */
     
+    
+    /* ikoner */
     nav svg .streger {
         fill: white;
     }
@@ -817,6 +841,7 @@ main {
     
     /* styling for mobil specifikt */
     
+    /* styling af selve burgermenuen (når man har klikket på stregerne) */
         .links-container{
            flex-direction: column; /* vertikale menupunkter */
            align-items: flex-start; /* paceret i venstre side af container */
@@ -832,6 +857,7 @@ main {
            transition: 1s ease-out; /* smooth når man åbner baren */
     
         }
+    
     nav a {
         box-sizing: border-box;
         height: auto;
@@ -845,13 +871,13 @@ main {
         display: block;
     }
     
-    /* vi bruger pseudo klassen "checked" der beskriver hvad der sker når vi klikker menubaren*/
-    
+    /* ~ styler links-container hvis det er søskende til #sidebar-active */
+    /* pseudo klassen :cheked styler/reagerer når ikonet er "checked" altså når vi trykker på de tre streger*/
     #sidebar-active:checked ~ .links-container{
     right: 0;
     
     }
-    /* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
+    /* sørger for at vi klikker ud fra menu'en når vi klikker et andet sted på siden */
     #sidebar-active:checked ~ #overlay{
         height: 100%;
         width: 100%;

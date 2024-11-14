@@ -362,8 +362,9 @@ button.button {
 
 
 /* tablet */
-@media only screen and (min-width: 600px) and (max-width: 1100px) {
-    header {
+@media only screen and (min-width: 600px) and (max-width: 1099px) {
+     /* generel styling af header */
+     header {
         position: fixed;
         top:0;
         left:5px;
@@ -391,14 +392,16 @@ button.button {
     .navbar {
         display: none;
     }
+    
     nav{
         height: 60px;
-        background-color: black;
+        background-color: transparent;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
     
+    /* den boks der folder ud når man klikker de tre prikker */
     .links-container {
         height: 100%;
         width: 100%;
@@ -408,13 +411,15 @@ button.button {
         background-color: var(--primary-color);
     }
     
+    
+    /* styling af tekst */
     nav a{
         height: 100%;
         padding: 0 20px;
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: white;
+        color: black;
     }
     
     nav a:hover {
@@ -422,10 +427,13 @@ button.button {
             color: #fff;
     }
     
-    nav .home-link{
+    /* benyttet i den video vi har fulgt, men ikke relevant for os */
+    /* nav .home-link{
         margin-right: auto;  
-    }
+    } */
     
+    
+    /* ikoner */
     nav svg .streger {
         fill: white;
     }
@@ -446,6 +454,7 @@ button.button {
     
     /* styling for mobil specifikt */
     
+    /* styling af selve burgermenuen (når man har klikket på stregerne) */
         .links-container{
            flex-direction: column; /* vertikale menupunkter */
            align-items: flex-start; /* paceret i venstre side af container */
@@ -461,6 +470,7 @@ button.button {
            transition: 1s ease-out; /* smooth når man åbner baren */
     
         }
+    
     nav a {
         box-sizing: border-box;
         height: auto;
@@ -474,13 +484,13 @@ button.button {
         display: block;
     }
     
-    /* vi bruger pseudo klassen "checked" der beskriver hvad der sker når vi klikker menubaren*/
-    
+    /* ~ styler links-container hvis det er søskende til #sidebar-active */
+    /* pseudo klassen :cheked styler/reagerer når ikonet er "checked" altså når vi trykker på de tre streger*/
     #sidebar-active:checked ~ .links-container{
     right: 0;
     
     }
-    /* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
+    /* sørger for at vi klikker ud fra menu'en når vi klikker et andet sted på siden */
     #sidebar-active:checked ~ #overlay{
         height: 100%;
         width: 100%;
@@ -722,7 +732,8 @@ button.button {
 /* Mobil */
 @media only screen and (max-width: 600px) {
 
-    header {
+     /* generel styling af header */
+     header {
         position: fixed;
         top:0;
         left:5px;
@@ -750,14 +761,16 @@ button.button {
     .navbar {
         display: none;
     }
+    
     nav{
         height: 60px;
-        background-color: black;
+        background-color: transparent;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
     
+    /* den boks der folder ud når man klikker de tre prikker */
     .links-container {
         height: 100%;
         width: 100%;
@@ -767,13 +780,15 @@ button.button {
         background-color: var(--primary-color);
     }
     
+    
+    /* styling af tekst */
     nav a{
         height: 100%;
         padding: 0 20px;
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: white;
+        color: black;
     }
     
     nav a:hover {
@@ -781,10 +796,13 @@ button.button {
             color: #fff;
     }
     
-    nav .home-link{
+    /* benyttet i den video vi har fulgt, men ikke relevant for os */
+    /* nav .home-link{
         margin-right: auto;  
-    }
+    } */
     
+    
+    /* ikoner */
     nav svg .streger {
         fill: white;
     }
@@ -805,6 +823,7 @@ button.button {
     
     /* styling for mobil specifikt */
     
+    /* styling af selve burgermenuen (når man har klikket på stregerne) */
         .links-container{
            flex-direction: column; /* vertikale menupunkter */
            align-items: flex-start; /* paceret i venstre side af container */
@@ -820,6 +839,7 @@ button.button {
            transition: 1s ease-out; /* smooth når man åbner baren */
     
         }
+    
     nav a {
         box-sizing: border-box;
         height: auto;
@@ -833,13 +853,13 @@ button.button {
         display: block;
     }
     
-    /* vi bruger pseudo klassen "checked" der beskriver hvad der sker når vi klikker menubaren*/
-    
+    /* ~ styler links-container hvis det er søskende til #sidebar-active */
+    /* pseudo klassen :cheked styler/reagerer når ikonet er "checked" altså når vi trykker på de tre streger*/
     #sidebar-active:checked ~ .links-container{
     right: 0;
     
     }
-    /* sørger for at vi klikker ud fra sidebaren når vi klikker et andet sted på siden */
+    /* sørger for at vi klikker ud fra menu'en når vi klikker et andet sted på siden */
     #sidebar-active:checked ~ #overlay{
         height: 100%;
         width: 100%;
