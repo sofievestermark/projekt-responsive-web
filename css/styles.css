@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    background-image: url(../img/forsidetop1.png);
+    background-image: url(../img/forsidetop1.webp);
     background-position: initial;
     background-size: 100vw;
     min-width: 100vw !important;
@@ -332,7 +332,7 @@ text-align: center;
     }
     
     main {
-        background-image: url(../img/forsidetop1.png);
+        background-image: url(../img/forsidetop1.webp);
         background-position: initial;
         background-size: 100vw !important;
         min-width: 100vw !important;
@@ -781,7 +781,7 @@ right: 0;
     }
    
     main {
-        background-image: url(../img/forsidetop1.png);
+        background-image: url(../img/forsidetop1.webp);
         background-position: initial;
         background-size: 100vw !important;
         min-width: 100vw!important;
