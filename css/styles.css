@@ -9,13 +9,15 @@
     --primary-font: "Lao Sangam MN";
     --secundary-font: "Roca";
 
-    @font-face {
+}
+
+@font-face {
         font-family: 'Lao Sangam MN';
         src: url('fonts/Lao Sangam MN.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
-    }
+    
  }
   
 
