@@ -405,6 +405,7 @@ button.button {
         display: flex;
         flex-direction: row;
         align-items: center;
+        background-color: var(--primary-color);
     }
     
     nav a{
@@ -425,8 +426,12 @@ button.button {
         margin-right: auto;  
     }
     
-    nav svg {
+    nav svg .streger {
         fill: white;
+    }
+    
+    nav svg .kryds {
+        fill: rgb(0, 0, 0);
     }
     
     /* fjerner sidebar hvis vi havde brugt denne nav på web */
@@ -759,6 +764,7 @@ button.button {
         display: flex;
         flex-direction: row;
         align-items: center;
+        background-color: var(--primary-color);
     }
     
     nav a{
@@ -779,8 +785,12 @@ button.button {
         margin-right: auto;  
     }
     
-    nav svg {
+    nav svg .streger {
         fill: white;
+    }
+    
+    nav svg .kryds {
+        fill: rgb(0, 0, 0);
     }
     
     /* fjerner sidebar hvis vi havde brugt denne nav på web */
