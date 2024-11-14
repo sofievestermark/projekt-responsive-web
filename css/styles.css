@@ -8,6 +8,14 @@
     --primary-color:#DEE2A4;
     --primary-font: "Lao Sangam MN";
     --secundary-font: "Roca";
+
+    @font-face {
+        font-family: 'Lao Sangam MN';
+        src: url('fonts/Lao Sangam MN.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
  }
   
 
@@ -20,6 +28,7 @@ body {
     text-align: center;
     background-color: black;
     min-width: 100vw;
+    line-height: 1.5rem;
 }
 
 main {
@@ -29,6 +38,7 @@ main {
     min-width: 100vw !important;
     background-repeat: no-repeat;
 }
+
 
 a:-webkit-any-link {
     color: -webkit-link;
@@ -224,6 +234,7 @@ h2, h1{
     padding-bottom: 10px;
     font-size: 3vw;
     color: #DEE2A4;
+    line-height: 1.7rem;
 }
 
 .sektion1{
