@@ -291,6 +291,7 @@ p {
         display: flex;
         flex-direction: row;
         align-items: center;
+        background-color: var(--primary-color);
     }
     
     nav a{
@@ -311,8 +312,12 @@ p {
         margin-right: auto;  
     }
     
-    nav svg {
+    nav svg .streger {
         fill: white;
+    }
+    
+    nav svg .kryds {
+        fill: rgb(0, 0, 0);
     }
     
     /* fjerner sidebar hvis vi havde brugt denne nav på web */
@@ -540,6 +545,7 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: var(--primary-color);
 }
 
 nav a{
@@ -560,8 +566,12 @@ nav .home-link{
     margin-right: auto;  
 }
 
-nav svg {
+nav svg .streger {
     fill: white;
+}
+
+nav svg .kryds {
+    fill: rgb(0, 0, 0);
 }
 
 /* fjerner sidebar hvis vi havde brugt denne nav på web */
