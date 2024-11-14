@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-
+/* Root for fonts og farver gennem siden */
 :root {
     --primary-color:#DEE2A4;
     --primary-font: "Lao Sangam MN";
@@ -40,12 +40,14 @@
         line-height: 1.5rem;
     }
 
+    /* Styling af links */
     a:-webkit-any-link {
         color: -webkit-link;
         text-decoration: none; /* Fjerner den underliggende streg */
         color: inherit; /* Arver farven fra omgivende elementer */ 
     }
 
+    /* Styling af header */
     header {
         position: fixed;
         top:0;
@@ -62,6 +64,7 @@
         text-transform: uppercase;
     }
 
+    /* Header logo */
     header .logo{
         margin-left: 10px;
         padding-left: 0;
@@ -72,6 +75,7 @@
 
     }
 
+    /* Styling af hovedmenupunkterne */
     header .navbar ul {
         list-style: none;
     }
@@ -94,6 +98,7 @@
         text-align: center;
     }
 
+    /* Hovereffekt til menupunkterne */
     header .navbar ul li a:hover {
         background: rgba(0,0,0,0.1);
         color: #fff;
@@ -153,9 +158,11 @@
         display: block;
     }
 
+    /* Gemmer checkboxen */
     #menu-bar {
         display: none;
     }
+
 
     header label {
         font-size: 20px;
@@ -164,6 +171,7 @@
         display: none;
     }
 
+    /* Styling af navigationsbar/burgermenu til mobil og tablet */
 .burgermenu{
     display: none;
 }
