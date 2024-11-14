@@ -528,7 +528,7 @@ right: 0;
     .forsidelogo {
     position: relative;
     width: 45vw; /* Juster størrelsen på billedet */
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-bottom: 5%; /* Afstand mellem billedet og knappen */
     z-index: 1; /* Sørger for, at billedet er foran baggrunden */
     }
@@ -697,7 +697,7 @@ header .logo{
 }
 
 .logo{
-    width: 150px;
+    width: 75px;
 
 }
 
@@ -831,7 +831,7 @@ right: 0;
         background-position: center;
         background-repeat: no-repeat;
         min-width: 100vw; /*skal muligvis ændres */
-        height: 65vh;
+        height: 45vh;
         display: flex;
         flex-direction: column; /* Gør det muligt at arrangere børnene lodret */
         align-items: center;
@@ -870,6 +870,7 @@ right: 0;
         width: 45vw;
         z-index: 1;
         margin-top: 0;
+        margin-bottom: 0;
     }
 
     .sektion1 {
