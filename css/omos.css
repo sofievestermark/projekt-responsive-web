@@ -391,27 +391,6 @@ p {
         display: none;
     }
   
-
-
-    body {
-        font-family: 'Lao Sangam MN', sans-serif;
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 10px;
-    }
-    .om-os {
-        max-width: 100%;
-        margin: 0 auto;
-        margin-top: 40px;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 20%;
-    }
-
-#menu-bar {
-    display: none;
-}
     
     header label {
         font-size: 20px;
